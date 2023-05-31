@@ -10133,7 +10133,9 @@ form.tracking-form {
 }
 
 .count-item__img {
-    text-align: center
+    text-align: center;
+    width: 100%;
+    height: auto    
 }
 
 .count-item__img img {
@@ -10153,17 +10155,23 @@ form.tracking-form {
 }
 
 .icon-item {
-    margin-bottom: 50px
+    margin: 50PX 25PX;
+    padding: 20px;
+    border: 10px ridge #26cf67;
+    border-radius: 20px;
+    
 }
 
 .icon-item .icon {
     color: #003d90;
-    font-size: 60px
+    font-size: 60px;
 }
 
 .icon-item__count,
 .icon-item__img {
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    text-align: center;
+
 }
 
 .icon-item__img img {
@@ -10190,11 +10198,13 @@ form.tracking-form {
 }
 
 .icon-item__title {
-    margin-bottom: 0
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .icon-item__text {
-    margin-top: 16px
+    margin-top: 16px;
+    text-align: justify;
 }
 
 .icon-item__text:last-of-type {
