@@ -12,6 +12,12 @@
 	<title>Dolphine Maritime</title>
 	<!-- styles-->
 	<link rel="stylesheet" href="css/styles.min.css" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 	<!-- web-font loader-->
 	<script>
 		WebFontConfig = {
@@ -41,6 +47,339 @@
 </head>
 
 <body>
+
+	<style>
+		.testimonial_section {
+			display: block;
+			overflow: hidden;
+		}
+
+		.testimonial_section:after {
+			display: block;
+			clear: both;
+			content: "";
+		}
+
+		.testimonial_section .about_content {
+			background-color: #020d26;
+			padding-top: 77px;
+			padding-right: 210px;
+			padding-bottom: 62px;
+			position: relative;
+		}
+
+		.testimonial_section .about_content .background_layer {
+			background-color: #020d26;
+			width: auto;
+			margin-left: -200px;
+			right: 0;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+		}
+
+		.testimonial_section .about_content .layer_content {
+			position: relative;
+			z-index: 9;
+			height: 100%;
+		}
+
+		.testimonial_section .about_content .layer_content .section_title {
+			margin-bottom: 24px;
+			position: relative;
+		}
+
+		.testimonial_section .about_content .layer_content .section_title:after {
+			display: block;
+			clear: both;
+			content: "";
+		}
+
+		.testimonial_section .about_content .layer_content .section_title h5 {
+			color: #fff;
+			font-family: "Open Sans";
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 28px;
+			color: #818a8f;
+			margin-top: -5px;
+			margin-bottom: 6px;
+		}
+
+		.testimonial_section .about_content .layer_content .section_title h2 {
+			font-family: "Titillium Web";
+			font-weight: 300;
+			font-size: 45px;
+			line-height: 50px;
+			padding-bottom: 51px;
+			margin-bottom: 0px;
+			color: #fff;
+		}
+
+		.testimonial_section .about_content .layer_content .section_title h2 strong {
+			font-weight: 600 !important;
+			width: 100%;
+			display: block;
+		}
+
+		.testimonial_section .about_content .layer_content .section_title .heading_line {
+			position: relative;
+		}
+
+		.testimonial_section .about_content .layer_content .section_title .heading_line span {
+			transition: all 0.5s ease-in-out 0s;
+			position: relative;
+		}
+
+		.testimonial_section .about_content .layer_content .section_title .heading_line span:after {
+			content: "";
+			right: auto;
+			left: 69px;
+			position: absolute;
+			bottom: 28px;
+			width: 17px;
+			margin-left: 0;
+			border-bottom-width: 3px;
+			border-bottom-color: #cacaca;
+			border-bottom-style: solid;
+		}
+
+		.testimonial_section .about_content .layer_content .section_title .heading_line:after {
+			content: "";
+			left: 1%;
+			margin-left: 0;
+			position: absolute;
+			bottom: 28px;
+			width: 59px;
+			border-bottom-width: 3px;
+			border-bottom-style: solid;
+			border-bottom-color: #ff5e14;
+		}
+
+		.testimonial_section .about_content .layer_content .section_title p {
+			color: #fff;
+			margin: 0 0 15px;
+		}
+
+		.testimonial_section .about_content .layer_content a {
+			color: #fff;
+			text-transform: capitalize;
+			font-size: 15px;
+			font-weight: 600;
+			text-decoration: none;
+			transition: all 0.3s;
+		}
+
+		.testimonial_section .about_content .layer_content a i {
+			font-size: 18px;
+			vertical-align: middle;
+		}
+
+		.testimonial_section .about_content .layer_content a:hover {
+			color: #ff5e14;
+		}
+
+		.testimonial_section .testimonial_box {
+			margin-top: 60px !important;
+			position: relative;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container {
+			background-color: #ff5e14;
+			margin-left: -170px !important;
+			position: relative;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .background_layer {
+			background-color: #ff5e14;
+			width: auto;
+			margin-right: -200px;
+			right: 0;
+			background-image: url(../images/map.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			position: absolute;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .layer_content {
+			position: relative;
+			z-index: 9;
+			height: 100%;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel {
+			display: block;
+			position: relative;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel .testimonials {
+			margin: 10px 0 10px 0;
+			padding: 62px 0px 72px 50px;
+			position: relative;
+			text-align: center;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel .testimonials .testimonial_content {
+			box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.13);
+			margin-left: 150px;
+			margin-top: 69px;
+			padding: 45px 40px 45px 40px;
+			z-index: 1;
+			position: relative;
+			background-color: #fff;
+			transition: all 0.5s ease-in-out 0s;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel .testimonials .testimonial_content .testimonial_caption {
+			margin-bottom: 15px;
+			position: relative;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel .testimonials .testimonial_content .testimonial_caption:after {
+			content: "";
+			width: 30px;
+			display: block;
+			height: 2px;
+			text-align: center;
+			left: 46%;
+			margin-top: 6px;
+			background-color: #ff5e14;
+			position: absolute;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel .testimonials .testimonial_content .testimonial_caption h6 {
+			padding-top: 0;
+			margin-bottom: -5px;
+			font-size: 19px;
+			font-weight: 600;
+			line-height: 24px;
+			color: #020d26;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel .testimonials .testimonial_content .testimonial_caption span {
+			font-size: 12px;
+			color: #9f9f9f;
+			margin: 0;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel .testimonials .testimonial_content p {
+			padding: 0;
+			margin: 0;
+			padding-top: 10px;
+			font-size: 16px;
+			line-height: 28px;
+			font-weight: 400;
+			color: #5d6576;
+			font-style: italic;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel .testimonials .images_box .testimonial_img {
+			border: none;
+			position: absolute;
+			top: 0;
+			left: 55px;
+			top: 80px;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .layer_content .testimonial_owlCarousel .testimonials .images_box .testimonial_img img {
+			border: 5px solid #fff;
+			box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+			width: 35%;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .owl-nav .owl-prev {
+			position: absolute;
+			top: 165px;
+			right: 42px;
+			border-radius: 0;
+			background: #ff5e14;
+			display: block;
+			outline: 0;
+			width: 34px;
+			line-height: 34px;
+			height: 34px;
+			color: #fff;
+			font-size: 23px;
+			margin-top: -20px;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .owl-nav .owl-prev:hover {
+			background: #020d26;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .owl-nav .owl-next {
+			position: absolute;
+			top: 165px;
+			right: 5px;
+			border-radius: 0;
+			display: block;
+			background: #ff5e14;
+			outline: 0;
+			width: 34px;
+			text-align: center;
+			line-height: 34px;
+			height: 34px;
+			color: #fff;
+			font-size: 23px;
+			margin-top: -20px;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.testimonial_section .testimonial_box .testimonial_container .owl-nav .owl-next:hover {
+			background: #020d26;
+		}
+
+		@media all and (max-width: 991px) {
+			.testimonial_section .about_content {
+				padding-right: 15px !important;
+			}
+
+			.testimonial_section .about_content .background_layer {
+				width: 200% !important;
+			}
+
+			.testimonial_section .testimonial_box {
+				margin-top: 0 !important;
+			}
+
+			.testimonial_section .testimonial_box .background_layer {
+				width: 200% !important;
+				margin-left: -200px;
+			}
+
+			.testimonial_section .testimonial_box .about_content {
+				padding-left: 15px !important;
+				padding-right: 15px !important;
+				margin-top: 28% !important;
+			}
+
+			.testimonial_section .testimonial_box .testimonial_container {
+				margin-left: -15px !important;
+			}
+
+			.testimonial_section .testimonial_box .testimonial_container .testimonials {
+				margin: 0px 0 20px 0;
+			}
+
+			.testimonial_section .testimonial_box .testimonial_container .testimonials .testimonial_content {
+				margin-left: -36px !important;
+			}
+
+			.testimonial_section .testimonial_box .testimonial_container .testimonials .images_box {
+				display: none;
+			}
+		}
+	</style>
+	<!-- Google font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
 	<div class="page-wrapper">
 		<!-- menu dropdown start-->
 		<div class="menu-dropdown">
@@ -62,7 +401,8 @@
 							<span>About Us</span><span>
 								<svg class="icon">
 									<use xlink:href="#chevron-right"></use>
-								</svg></span></div>
+								</svg></span>
+						</div>
 						<div class="screen__item screen--trigger" data-category="screen-three">
 							<span>Services</span><span>
 								<svg class="icon">
@@ -88,7 +428,7 @@
 								</svg></span>
 						</div>
 					</div>
-					
+
 					<div class="menu-dropdown__block top-50"><span class="block__title">Email</span><a
 							class="screen__link" href="mailto:info@dolphinmaritime.in">info@dolphinmaritime.in</a></div>
 					<div class="menu-dropdown__block top-20">
@@ -120,7 +460,8 @@
 									</svg></a></li>
 						</ul>
 					</div>
-					<div class="menu-dropdown__block top-50"><a class="button button--filled" href="request.html">Get a Quote</a>
+					<div class="menu-dropdown__block top-50"><a class="button button--filled" href="request.html">Get a
+							Quote</a>
 					</div>
 				</div>
 			</div>
@@ -158,7 +499,7 @@
 							</svg> <span>Services</span>
 						</h6>
 					</div>
-					
+
 				</div>
 			</div>
 			<div class="menu-dropdown__inner" data-value="screen-four">
@@ -171,7 +512,7 @@
 						</h6>
 					</div>
 					<div class="screen__item"><a class="screen__link" href="#">Overseas Network</a></div>
-					
+
 				</div>
 			</div>
 			<div class="menu-dropdown__inner" data-value="screen-five">
@@ -301,7 +642,7 @@
 		<!-- header end-->
 
 
-		
+
 		<main class="main">
 			<!-- promo start-->
 			<div class="promo">
@@ -378,8 +719,8 @@
 					<div class="promo-slider__item">
 						<div class="promo-slider__layout"></div>
 						<picture>
-							<source srcset="" media="(min-width: 992px)" /><img class="img--bg"
-								src="img/promo_5.jpg" alt="img" />
+							<source srcset="" media="(min-width: 992px)" /><img class="img--bg" src="img/promo_5.jpg"
+								alt="img" />
 						</picture>
 						<!-- <div class="align-container">
 							<div class="align-container__item">
@@ -459,7 +800,7 @@
 								</div>
 								<h6 class="icon-item__title">Warehousing & Distribution</h6>
 								<p class="icon-item__text">We offer warehousing and distribution services,
-									 providing secure storage facilities to manage the distribution process.</p>
+									providing secure storage facilities to manage the distribution process.</p>
 							</div>
 						</div>
 						<div class="col-sm-6 col-lg-4">
@@ -470,7 +811,8 @@
 									</svg>
 								</div>
 								<h6 class="icon-item__title">Support 24/7</h6>
-								<p class="icon-item__text">We offer round-the-clock support to our clients, ensuring that 
+								<p class="icon-item__text">We offer round-the-clock support to our clients, ensuring
+									that
 									assistance is available 24/7 for all their logistics needs.</p>
 							</div>
 						</div>
@@ -482,10 +824,11 @@
 									</svg>
 								</div>
 								<h6 class="icon-item__title">International Logistics</h6>
-								<p class="icon-item__text">We have expertise in international logistics, enabling them to handle shipments between different countries. </p>
+								<p class="icon-item__text">We have expertise in international logistics, enabling them
+									to handle shipments between different countries. </p>
 							</div>
 						</div>
-						
+
 					</div>
 					<div class="row offset-50">
 						<div class="col-sm-6 col-lg-4">
@@ -496,7 +839,8 @@
 									</svg>
 								</div>
 								<h6 class="icon-item__title">Transportation Services</h6>
-								<p class="icon-item__text">Our services includes air freight, ocean freight, road transportation. They can arrange for the efficient and timely movement of goods.</p>
+								<p class="icon-item__text">Our services includes air freight, ocean freight, road
+									transportation. They can arrange for the efficient and timely movement of goods.</p>
 							</div>
 						</div>
 						<div class="col-sm-6 col-lg-4">
@@ -507,7 +851,8 @@
 									</svg>
 								</div>
 								<h6 class="icon-item__title">Customs Clearance</h6>
-								<p class="icon-item__text">We have a dedicated team that is well-versed in documentation, minimizing delays and ensuring smooth customs clearance.</p>
+								<p class="icon-item__text">We have a dedicated team that is well-versed in
+									documentation, minimizing delays and ensuring smooth customs clearance.</p>
 							</div>
 						</div>
 						<div class="col-sm-6 col-lg-4">
@@ -518,7 +863,8 @@
 									</svg>
 								</div>
 								<h6 class="icon-item__title">Value-Added Services</h6>
-								<p class="icon-item__text">We offer value-added services such as packaging, labeling, quality control, and order fulfillment of customer.</p>
+								<p class="icon-item__text">We offer value-added services such as packaging, labeling,
+									quality control, and order fulfillment of customer.</p>
 							</div>
 						</div>
 					</div>
@@ -526,41 +872,41 @@
 			</section>
 			<!-- section end-->
 
-<!-- section start-->
-<section class="section front-about">
-	<div class="front-about__bg"><img class="section--bg t50 r0" src="img/testimonials-bg.png" alt="img" />
-	</div>
-	<div class="front-about__img"><img class="img--bg" src="img/transport.jpg" alt="img" /></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-4 offset-xl-1 d-none d-xl-flex offset-50">
-				<div class="counter counter--filled">
-					<div class="counter__top"><span class="js-counter counter__count">23</span><span
-							class="counter__subject">years</span></div>
-					<div class="counter__lower"><span class="counter__details">Experience in
-							transportation</span></div>
+			<!-- section start-->
+			<section class="section front-about">
+				<div class="front-about__bg"><img class="section--bg t50 r0" src="img/testimonials-bg.png" alt="img" />
 				</div>
-			</div>
-			<div class="col-xl-7">
-				<div class="heading heading--white"><span class="heading__pre-title">About Dolphin</span>
-					<h3 class="heading__title">Dolphin Maritime Agencies PVT LTD is the biggest <span
-							class="color--green">transportation</span> company</h3>
+				<div class="front-about__img"><img class="img--bg" src="img/transport.jpg" alt="img" /></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-4 offset-xl-1 d-none d-xl-flex offset-50">
+							<div class="counter counter--filled">
+								<div class="counter__top"><span class="js-counter counter__count">23</span><span
+										class="counter__subject">years</span></div>
+								<div class="counter__lower"><span class="counter__details">Experience in
+										transportation</span></div>
+							</div>
+						</div>
+						<div class="col-xl-7">
+							<div class="heading heading--white"><span class="heading__pre-title">About Dolphin</span>
+								<h3 class="heading__title">Dolphin Maritime Agencies PVT LTD is the biggest <span
+										class="color--green">transportation</span> company</h3>
+							</div>
+							<p> Estabtished in yeor 2000 a freight fonarording compony todoy, Dolphin
+								Morilime Agencies hqs emerged to become one of the leoding
+								lnternoiionol Logisiics providers in lndio. We hove diversified octivities in
+								the field of Cleoring ond Forwording ond provide services to o lorge client
+								bose both in lndio ond obrood. DMAPL holding volid MTO Licence lo
+								operote os Multi-modolTronsporter issued by DGS, Mumboi lndio.</p><a
+								class="button button--white" href="about.html"><span>More about</span>
+								<svg class="icon">
+									<use xlink:href="#arrow"></use>
+								</svg></a>
+						</div>
+					</div>
 				</div>
-				<p> Estabtished in yeor 2000 a freight fonarording compony todoy, Dolphin
-					Morilime Agencies hqs emerged to become one of the leoding
-					lnternoiionol Logisiics providers in lndio. We hove diversified octivities in
-					the field of Cleoring ond Forwording ond provide services to o lorge client
-					bose both in lndio ond obrood. DMAPL holding volid MTO Licence lo
-					operote os Multi-modolTronsporter issued by DGS, Mumboi lndio.</p><a
-					class="button button--white" href="about.html"><span>More about</span>
-					<svg class="icon">
-						<use xlink:href="#arrow"></use>
-					</svg></a>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- section end-->
+			</section>
+			<!-- section end-->
 
 			<!-- section start-->
 			<section class="section">
@@ -570,20 +916,27 @@
 							<div class="heading bottom-40"><span class="heading__pre-title">Services</span>
 								<h3 class="heading__title">Transporterium Services</h3><span
 									class="heading__layout">Services</span>
-							</div><a class="button button--green d-none d-lg-inline-block" href="services.html"><span>All
+							</div><a class="button button--green d-none d-lg-inline-block"
+								href="services.html"><span>All
 									services</span>
 								<svg class="icon">
 									<use xlink:href="#arrow"></use>
 								</svg></a>
 						</div>
 						<div class="col-lg-8">
-							<p><strong>Dolphin Maritime Pvt Ltd is a comprehensive logistics and freight forwarding 
-								company that offers a range of services to facilitate seamless international trade and 
-								supply chain management. In their service section, they highlight their expertise in Clearing & 
-								Forwarding, Freight Forwarding, Warehousing, Transportation, and bulk/break bulk cargo handling.</strong></p>
-							<p class="bottom-0">We offer a comprehensive suite of services encompassing customs clearance, freight 
-								forwarding, warehousing, transportation, and specialized cargo handling. Their commitment to efficiency, 
-								reliability, and customer satisfaction makes them a trusted partner for businesses involved in global trade 
+							<p><strong>Dolphin Maritime Pvt Ltd is a comprehensive logistics and freight forwarding
+									company that offers a range of services to facilitate seamless international trade
+									and
+									supply chain management. In their service section, they highlight their expertise in
+									Clearing &
+									Forwarding, Freight Forwarding, Warehousing, Transportation, and bulk/break bulk
+									cargo handling.</strong></p>
+							<p class="bottom-0">We offer a comprehensive suite of services encompassing customs
+								clearance, freight
+								forwarding, warehousing, transportation, and specialized cargo handling. Their
+								commitment to efficiency,
+								reliability, and customer satisfaction makes them a trusted partner for businesses
+								involved in global trade
 								and logistics.</p>
 						</div>
 					</div>
@@ -591,25 +944,29 @@
 						<div class="col-sm-6 col-xl-3">
 							<div class="count-item">
 								<div class="count-item__img"><img src="img/ff.png" alt="icon" /></div>
-								<h6 class="count-item__title"><span class="count-item__count">01</span> <span>Freight Forwording</span></h6>
+								<h6 class="count-item__title"><span class="count-item__count">01</span> <span>Freight
+										Forwording</span></h6>
 							</div>
 						</div>
 						<div class="col-sm-6 col-xl-3">
 							<div class="count-item">
 								<div class="count-item__img"><img src="img/warehousing.png" alt="icon" /></div>
-								<h6 class="count-item__title"><span class="count-item__count">02</span> <span>warehousing</span></h6>
+								<h6 class="count-item__title"><span class="count-item__count">02</span>
+									<span>warehousing</span></h6>
 							</div>
 						</div>
 						<div class="col-sm-6 col-xl-3">
 							<div class="count-item">
 								<div class="count-item__img"><img src="img/transportation.png" alt="icon" /></div>
-								<h6 class="count-item__title"><span class="count-item__count">03</span> <span>Transportation</span></h6>
+								<h6 class="count-item__title"><span class="count-item__count">03</span>
+									<span>Transportation</span></h6>
 							</div>
 						</div>
 						<div class="col-sm-6 col-xl-3">
 							<div class="count-item">
 								<div class="count-item__img"><img src="img/cargo.png" alt="icon" /></div>
-								<h6 class="count-item__title"><span class="count-item__count">04</span> <span>Cargo Handling</span></h6>
+								<h6 class="count-item__title"><span class="count-item__count">04</span> <span>Cargo
+										Handling</span></h6>
 							</div>
 						</div>
 					</div>
@@ -623,8 +980,8 @@
 				</div>
 			</section>
 			<!-- section end-->
-			
-			
+
+
 			<!-- section start-->
 			<section class="section">
 				<div class="container">
@@ -932,6 +1289,107 @@
 				</div>
 			</section>
 			<!-- section end-->
+
+			<!-- Google font -->
+			<link rel="stylesheet"
+				href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,600,600i,700,700i,900">
+			<link rel="stylesheet"
+				href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i">
+			<!-- carousel -->
+			<link rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+			<link rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+			<section class="testimonial_section">
+				<div class="testimonials__bg"><img class="section--bg t50 r0" src="img/testimonials-bg.png" alt="img" />
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7">
+							<div class="about_content">
+								<div class="background_layer"></div>
+								<div class="layer_content">
+									<div class="section_title">
+										<h5>CLIENTS</h5>
+										<h2>Happy with<strong>Customers & Clients</strong></h2>
+										<div class="heading_line"><span></span></div>
+										<p>If you need any industrial solution we are available for you. Lorem ipsum
+											dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+											incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+									<a href="#">Contact Us<i class="icofont-long-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="testimonial_box">
+								<div class="testimonial_container">
+									<div class="background_layer"></div>
+									<div class="layer_content">
+										<div class="testimonial_owlCarousel owl-carousel">
+											<div class="testimonials">
+												<div class="testimonial_content">
+													<div class="testimonial_caption">
+														<h6>Robert Clarkson</h6>
+														<span>CEO, Axura</span>
+													</div>
+													<p>The team at Tectxon industry is very talented, dedicated, well
+														organized and knowledgeable. I was most satisfied with the
+														quality of the workmanship. They did excellent work.</p>
+												</div>
+												<div class="images_box">
+													<div class="testimonial_img">
+														<img class="img-center"
+															src="https://cdn.pixabay.com/photo/2017/08/30/17/27/business-woman-2697954_960_720.jpg"
+															alt="images not found">
+													</div>
+												</div>
+											</div>
+											<div class="testimonials">
+												<div class="testimonial_content">
+													<div class="testimonial_caption">
+														<h6>Robert Clarkson</h6>
+														<span>CEO, Axura</span>
+													</div>
+													<p>The team at Tectxon industry is very talented, dedicated, well
+														organized and knowledgeable. I was most satisfied with the
+														quality of the workmanship. They did excellent work.</p>
+												</div>
+												<div class="images_box">
+													<div class="testimonial_img">
+														<img class="img-center"
+															src="https://cdn.pixabay.com/photo/2016/02/19/10/56/man-1209494_960_720.jpg"
+															alt="images not found">
+													</div>
+												</div>
+											</div>
+											<div class="testimonials">
+												<div class="testimonial_content">
+													<div class="testimonial_caption">
+														<h6>Robert Clarkson</h6>
+														<span>CEO, Axura</span>
+													</div>
+													<p>The team at Tectxon industry is very talented, dedicated, well
+														organized and knowledgeable. I was most satisfied with the
+														quality of the workmanship. They did excellent work.</p>
+												</div>
+												<div class="images_box">
+													<div class="testimonial_img">
+														<img class="img-center"
+															src="https://cdn.pixabay.com/photo/2017/09/21/19/06/woman-2773007_960_720.jpg"
+															alt="images not found">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<!-- section start-->
 			<section class="section testimonials bg--lgray">
 				<div class="testimonials__bg"><img class="section--bg t50 r0" src="img/testimonials-bg.png" alt="img" />
@@ -1111,7 +1569,8 @@
 			</section>
 			<!-- section end-->
 			<!-- section start-->
-			<section class="section img--bg" style="background-image: url(img/action-bg1.jpg);background-repeat: no-repeat;">
+			<section class="section img--bg"
+				style="background-image: url(img/action-bg1.jpg);background-repeat: no-repeat;">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 col-xl-6">
@@ -1185,87 +1644,109 @@
 				</div>
 			</section>
 			<!-- section end-->
-			
+
 		</main>
 
-			<!-- footer start-->
-			<footer class="page-footer"><img class="section--bg b0 r0" src="img/footer-bg.png" alt="bg" />
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-lg-4">
-							<h6 class="page-footer__title title--white">Discover</h6>
-							<ul class="page-footer__menu list--reset">
-								<li><a href="#">About us</a></li>
-								<li><a href="#">Pricing plan</a></li>
-								<li><a href="#">Elements</a></li>
-								<li><a href="#">Team</a></li>
-								<li><a href="#">Warehouse</a></li>
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">Careers</a></li>
-								<li><a href="#">Calculator</a></li>
-								<li><a href="#">Site map</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">FAQ</a></li>
-							</ul>
-						</div>
-						<div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 top-40 top-md-0">
-							<h6 class="page-footer__title title--white">USA office</h6>
-							<div class="page-footer__details">
-								<p><strong>Location:</strong> <span>av. Washington 165, NY CA 54003</span></p>
-								<p><strong>Phone:</strong> <a href="tel:+31859644725">+31 85 964 47 25</a> <a
-										href="tel:+31859644725">+31 65 792 63 11</a></p>
-								<p><strong>Email:</strong> <a href="mailto:info@transx.com">info@transx.com</a></p>
-								<p><strong>Openning hours:</strong> <span>9:00 AM - 5:00 PM</span></p>
-							</div>
-						</div>
-						<div
-							class="col-lg-3 d-flex flex-column justify-content-between align-items-sm-center align-items-lg-end top-40 top-lg-0">
-							<div class="page-footer__logo"><a href="index.html"><img src="img/logo_white.png"
-										alt="logo" /></a></div>
-							<ul class="socials list--reset">
-								<li class="socials__item"><a class="socials__link" href="#">
-										<svg class="icon">
-											<use xlink:href="#youtube"></use>
-										</svg></a></li>
-								<li class="socials__item"><a class="socials__link" href="#">
-										<svg class="icon">
-											<use xlink:href="#facebook"></use>
-										</svg></a></li>
-								<li class="socials__item"><a class="socials__link" href="#">
-										<svg class="icon">
-											<use xlink:href="#twitter"></use>
-										</svg></a></li>
-								<li class="socials__item"><a class="socials__link" href="#">
-										<svg class="icon">
-											<use xlink:href="#linkedin"></use>
-										</svg></a></li>
-								<li class="socials__item"><a class="socials__link" href="#">
-										<svg class="icon">
-											<use xlink:href="#inst"></use>
-										</svg></a></li>
-							</ul>
+		<!-- footer start-->
+		<footer class="page-footer"><img class="section--bg b0 r0" src="img/footer-bg.png" alt="bg" />
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-4">
+						<h6 class="page-footer__title title--white">Discover</h6>
+						<ul class="page-footer__menu list--reset">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Pricing plan</a></li>
+							<li><a href="#">Elements</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#">Warehouse</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Calculator</a></li>
+							<li><a href="#">Site map</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 top-40 top-md-0">
+						<h6 class="page-footer__title title--white">USA office</h6>
+						<div class="page-footer__details">
+							<p><strong>Location:</strong> <span>av. Washington 165, NY CA 54003</span></p>
+							<p><strong>Phone:</strong> <a href="tel:+31859644725">+31 85 964 47 25</a> <a
+									href="tel:+31859644725">+31 65 792 63 11</a></p>
+							<p><strong>Email:</strong> <a href="mailto:info@transx.com">info@transx.com</a></p>
+							<p><strong>Openning hours:</strong> <span>9:00 AM - 5:00 PM</span></p>
 						</div>
 					</div>
-					<div class="row top-50">
-						<div class="col-lg-6 text-sm-center text-lg-left">
-							<div class="page-footer__privacy"><a href="#">Terms and conditions</a><a href="#">Privacy
-									policy</a><a href="#">Cookies</a></div>
-						</div>
-						<div class="col-lg-6 text-sm-center text-lg-right">
-							<div class="page-footer__copyright">© 2020 TransX. All rights reserved</div>
-						</div>
+					<div
+						class="col-lg-3 d-flex flex-column justify-content-between align-items-sm-center align-items-lg-end top-40 top-lg-0">
+						<div class="page-footer__logo"><a href="index.html"><img src="img/logo_white.png"
+									alt="logo" /></a></div>
+						<ul class="socials list--reset">
+							<li class="socials__item"><a class="socials__link" href="#">
+									<svg class="icon">
+										<use xlink:href="#youtube"></use>
+									</svg></a></li>
+							<li class="socials__item"><a class="socials__link" href="#">
+									<svg class="icon">
+										<use xlink:href="#facebook"></use>
+									</svg></a></li>
+							<li class="socials__item"><a class="socials__link" href="#">
+									<svg class="icon">
+										<use xlink:href="#twitter"></use>
+									</svg></a></li>
+							<li class="socials__item"><a class="socials__link" href="#">
+									<svg class="icon">
+										<use xlink:href="#linkedin"></use>
+									</svg></a></li>
+							<li class="socials__item"><a class="socials__link" href="#">
+									<svg class="icon">
+										<use xlink:href="#inst"></use>
+									</svg></a></li>
+						</ul>
 					</div>
 				</div>
-			</footer>
-			<!-- footer end-->
-		
+				<div class="row top-50">
+					<div class="col-lg-6 text-sm-center text-lg-left">
+						<div class="page-footer__privacy"><a href="#">Terms and conditions</a><a href="#">Privacy
+								policy</a><a href="#">Cookies</a></div>
+					</div>
+					<div class="col-lg-6 text-sm-center text-lg-right">
+						<div class="page-footer__copyright">© 2020 TransX. All rights reserved</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end-->
+
 	</div>
 	<!-- libs-->
 	<script src="../../../ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<!-- scripts-->
 	<script src="js/common.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+	<script>$('.testimonial_owlCarousel').owlCarousel({
+			loop: true,
+			margin: 10,
+			dots: false,
+			nav: true,
+			autoplay: false,
+			smartSpeed: 3000,
+			autoplayTimeout: 4000,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 1
+				},
+				1000: {
+					items: 1
+				}
+			}
+		})</script>
 	<div style="display: none">
 		<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg"
 			xmlns:xlink="http://www.w3.org/1999/xlink">
