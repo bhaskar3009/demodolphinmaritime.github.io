@@ -17170,7 +17170,10 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 150px
+    height: 150px;
+    font-weight: bold;
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .logos-slider__item::before {
@@ -17181,12 +17184,16 @@ p {
     left: 0;
     bottom: 0;
     right: 0;
-    background: #fff;
+    background:#b4b9be ;
     -webkit-transition: -webkit-transform .6s;
     transition: -webkit-transform .6s;
     -o-transition: transform .6s;
     transition: transform .6s;
     transition: transform .6s, -webkit-transform .6s
+}
+
+.companyName{
+    z-index: 1;
 }
 
 .logos-slider__item:hover::before {
@@ -17203,7 +17210,7 @@ p {
     margin-top: 40px
 }
 
-.logos-slider__item img {
+/* .logos-slider__item img {
     position: relative;
     z-index: 1;
     width: 80%;
@@ -17215,7 +17222,7 @@ p {
     -o-transition: transform .8s;
     transition: transform .8s;
     transition: transform .8s, -webkit-transform .8s
-}
+} */
 
 .logos-slider--style-2 .logos-slider__item {
     border: 1px solid #e2e2e2
