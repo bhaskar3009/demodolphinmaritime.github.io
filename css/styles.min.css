@@ -11387,6 +11387,7 @@ form.tracking-form {
   .service-sidebar .service-sidebar-single-services .title {
     position: relative;
     display: block;
+    
     margin-bottom: 12px;
     padding-left: 20px;
   }
@@ -11498,6 +11499,9 @@ form.tracking-form {
   .service-sidebar .service-sidebar-single-contact-box {
     position: relative;
     display: block;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 120px;
     background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;
@@ -11506,14 +11510,17 @@ form.tracking-form {
     padding: 50px 0px 44px;
     z-index: 1;
   }
+  .phone a{
+    text-decoration: none;
+  }
   .service-sidebar .service-sidebar-single-contact-box::before {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(215, 0, 6, 0.93);
-    border-radius: 10px;
+    background: rgba(3, 49, 53, 0.93);
+    border-radius: 30px;
     content: "";
     z-index: -1;
   }
@@ -11550,12 +11557,14 @@ form.tracking-form {
     margin-bottom: 42px;
   }
   .service-sidebar .service-sidebar-single-contact-box .title h2 {
-    color: #ffffff;
+        color: #4d86c7;
+
     font-size: 36px;
   }
   .service-sidebar .service-sidebar-single-contact-box .phone {
     font-size: 24px;
     line-height: 34px;
+    text-align: center;
   }
   .service-sidebar .service-sidebar-single-contact-box .phone a {
     color: #ffffff;
@@ -11563,12 +11572,15 @@ form.tracking-form {
     transition: all 500ms ease;
   }
   .service-sidebar .service-sidebar-single-contact-box .phone a:hover {
-    color: var(--theme-color1);
+    color: rgb(28, 27, 27);
   }
   .service-sidebar .service-sidebar-single-contact-box p {
-    color: #ffffff;
-    font-size: 14px;
+    color: #746b6b;
+    font-size: 20px;
+    font-weight: 900;
     line-height: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
   }
   .service-sidebar .service-sidebar-single-btn {
     position: relative;
