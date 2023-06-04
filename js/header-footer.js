@@ -228,141 +228,77 @@ customElements.define('my-header', MyHeader)
 
 class MyFooter extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `
-        <footer class="main-footer">
-        <div class="bg-image"  style="background-image: url(images/background/5.jpg)"></div>
-        <div class="anim-icons">
-            <span class="icon icon-plane-3 bounce-x"></span>
-        </div>
+        this.innerHTML = `<footer class="page-footer"><img class="section--bg b0 r0" src="img/footer-bg.png" alt="bg" />
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <h6 class="page-footer__title title--white">Discover</h6>
+                    <ul class="page-footer__menu list--reset">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="">Office Locations</a></li>
 
-        <!-- Contact info -->
-        <div class="contacts-outer">
-            <div class="auto-container">
-                <div class="row">
-                    <!-- Contact Info Block -->
-                    <div class="contact-info-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight">
-                        <div class="inner-box">
-                            <div class="icon-box"><i class="icon flaticon-international-shipping-2"></i></div>
-                            <h4 class="title">Address</h4>
-                            <div class="text">105, 106 & 108, 1st Floor, Plot no. 142, Plaza Shopping Centre, Sheriff Devji Street, Chakala Market, Mandvi, Mumbai - 400003</div>
-                        </div>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="">Network</a></li>
+                        <li><a href="">Achievements</a></li>
+                        <li><a href="contacts.html">Contact Us</a></li>
+                        <li><a href="request.html">Get a Quote</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 top-40 top-md-0">
+                    <h6 class="page-footer__title title--white">Main office</h6>
+                    <div class="page-footer__details">
+                        <p><strong> <b> Address:</b></strong> <br>
+                            <span>321, Podar Chambers,
+                                S A Brelvi Road
+                                Fort Mumbai-400001
+                            </span>
+                        </p>
+                        <br>
+                        <p><strong> <b>Phone:</b> </strong> <a href="tel:+912266310673">+91 2266310673</a></p>
+                        <p><strong>  <b>Email:</b> </strong> <a href="mailto:info@dolphinmaritime.in
+                            ">info@dolphinmaritime.in
+                            </a></p>
+                        <br>
+                        <p><strong> <b>Openning hours</b> :</strong>
+                            <br><span>Mon - Fri:- 10:00 AM - 06:00 PM</span>
+                            <br>
+                            <span>Sat: 10.00 AM - 04.00 PM</span>
+                            <br>
+                            <span>Sun: Closed</span>
+                        </p>
                     </div>
-
-                    <!-- Contact Info Block -->
-                    <div class="contact-info-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="300ms">
-                        <div class="inner-box">
-                            <div class="icon-box"><i class="icon flaticon-stock-1"></i></div>
-                            <h4 class="title">Contact</h4>
-                            <div class="text">
-
-                                <a href="mailto:saharamaritime@hotmail.com
-                                ">saharamaritime@hotmail.com
-                                </a><br>
-                                <a href="tel:+91 9819980001">+91 9819980001</a><br>
-    
-                                <a href="tel:+022 23479362
-                                ">+022 23479362
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Contact Info Block -->
-                    <div class="contact-info-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="600ms">
-                        <div class="inner-box">
-                            <div class="icon-box"><i class="icon flaticon-24-hours-2"></i></div>
-                            <h4 class="title">Timing</h4>
-                            <div class="text">Mon - Sat: 11.00 AM-07.00 PM Sunday: CLOSED</div>
-                        </div>
-                    </div>
+                </div>
+                <div class="col-lg-3 d-flex flex-column justify-content-between align-items-sm-center align-items-lg-end top-40 top-lg-0">
+                    <div class="page-footer__logo"><a href="index.html"><img src="img/DMLOGO-transformed.png"
+                                alt="logo" /></a></div>
+                    <ul class="socials list--reset">
+                        <li class="socials__item"><a class="socials__link" href="">
+                                <svg class="icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg></a></li>
+                        <li class="socials__item"><a class="socials__link" href="">
+                                <svg class="icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg></a></li>
+                        <li class="socials__item"><a class="socials__link" href="">
+                                <svg class="icon">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg></a></li>
+                        <li class="socials__item"><a class="socials__link" href="">
+                                <svg class="icon">
+                                    <use xlink:href="#inst"></use>
+                                </svg></a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <!-- End Contact info -->
-
-        <!--Widgets Section-->
-        <div class="widgets-section">
-            <div class="auto-container">
-                <div class="row">
-                    <!--Footer Column-->
-                    <div class="footer-column col-xl-4 col-lg-12 col-md-6 col-sm-12">
-                    <div class="logo-box">
-                    <div class="logo"><a href="#"><img width="150" 
-                    height="50" src="images/footer-logo.png.jpg" alt="" title="Sahara Maritime"></a></div>
+            <div class="row top-50 last">
+                <div class="col-lg-6 text-sm-center text-lg-left">
+                    <div class="page-footer__privacy"><a href="">Terms and conditions</a><a href="">Privacy
+                            policy</a><a href="">Cookies</a></div>
                 </div>
-                        <div class="footer-widget about-widget">
-                            <div class="logo"><a href="index-2.html"><img src="images/logo-2.png" alt="" ></a></div>
-                            <div class="text">We pride ourselves on providing customized logistics solutions for your unique needs and committed to delivering the highest level of customer satisfaction, and we look forward to working with you on your next export shipment</div>
-                            <a href="page-about.html" class="theme-btn btn-style-one hvr-light small"><span class="btn-title">About</span></a>
-                        </div>
-                    </div>
-
-                    <!--Footer Column-->
-                    <div class="footer-column col-xl-5 col-lg-3 col-md-6 col-sm-12">
-                        <div class="footer-widget">
-                            <h3 class="widget-title">Service</h3>
-                            <ul class="user-links">
-                                <li><a href="#">Freight Forwarding</a></li>
-                                <li><a href="#">Logistics and Consulting</a></li>
-                                <li><a href="#">Warehousing and Distribution</a></li>
-                                <li><a href="#">Real Time Tracking</a></li>
-                                <li><a href="#">Customs Clearance and Brokerage</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <!--Footer Column-->
-                    <div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                        <div class="footer-widget gallery-widget">
-                            <h3 class="widget-title">Projects</h3>
-                            <div class="widget-content">
-                                <div class="outer clearfix">
-                                    <figure class="image">
-                                        <a href="#"><img src="images/resource/project-thumb-1.jpg" alt=""></a>
-                                    </figure>
-
-                                    <figure class="image">
-                                        <a href="#"><img src="images/resource/project-thumb-2.jpg" alt=""></a>
-                                    </figure>
-
-                                    <figure class="image">
-                                        <a href="#"><img src="images/resource/project-thumb-3.jpg" alt=""></a>
-                                    </figure>
-
-                                    <figure class="image">
-                                        <a href="#"><img src="images/resource/project-thumb-4.jpg" alt=""></a>
-                                    </figure>
-
-                                    <figure class="image">
-                                        <a href="#"><img src="images/resource/project-thumb-5.jpg" alt=""></a>
-                                    </figure>
-
-                                    <figure class="image">
-                                        <a href="#"><img src="images/resource/project-thumb-6.jpg" alt=""></a>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Footer Column-->
-                    
-
-                </div>
-            </div>
-        </div>
-
-        <!--Footer Bottom-->
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <div class="copyright-text">
-                        <p>&copy; Copyright 2023 by  <a href="index.html">Sahara Maritime Pvt Ltd. All rights Reserved.</a></p>
-                    </div>
-
-                    
+                <div class="col-lg-6 text-sm-center text-lg-right">
+                    <div class="page-footer__copyright">&copy; Copyright 2023 by  <a class="CW" href="index.html">Sahara Maritime Pvt Ltd.</a> All rights Reserved.</div>
                 </div>
             </div>
         </div>
