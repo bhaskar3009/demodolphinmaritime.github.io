@@ -53,14 +53,9 @@ class MyHeader extends HTMLElement {
                 <div class="menu-dropdown__block top-20">
                     <span class="block__title">Phone number</span>
                     <a class="screen__link" href="tel:+912266310673">+91-22-66310673</a>
-                    <!-- <a class="screen__link" href="tel:+18009756511">+ 1800 - 975 65 11</a> -->
                 </div>
                 <div class="menu-dropdown__block">
                     <ul class="socials list--reset">
-                        <li class="socials__item"><a class="socials__link" href="#">
-                                <svg class="icon">
-                                    <use xlink:href="#youtube"></use>
-                                </svg></a></li>
                         <li class="socials__item"><a class="socials__link" href="#">
                                 <svg class="icon">
                                     <use xlink:href="#facebook"></use>
@@ -104,9 +99,9 @@ class MyHeader extends HTMLElement {
                         </svg> <span>About Us</span>
                     </h6>
                 </div>
-                <div class="screen__item"><a class="screen__link" href="">Board Of Directors</a></div>
-                <div class="screen__item"><a class="screen__link" href="">List Of KMP</a></div>
-                <div class="screen__item"><a class="screen__link" href="">Office Locations</a></div>
+                <div class="screen__item"><a class="screen__link" href="bod.html">Board Of Directors</a></div>
+                <div class="screen__item"><a class="screen__link" href="kmp.html">List Of KMP</a></div>
+                <div class="screen__item"><a class="screen__link" href="officelocations.html">Office Locations</a></div>
             </div>
         </div>
         <div class="menu-dropdown__inner" data-value="screen-three">
@@ -130,7 +125,7 @@ class MyHeader extends HTMLElement {
                         </svg> <span>Network</span>
                     </h6>
                 </div>
-                <div class="screen__item"><a class="screen__link" href="#">Overseas Network</a></div>
+                <div class="screen__item"><a class="screen__link" href="overseasnetwork.html">Overseas Network</a></div>
     
             </div>
         </div>
@@ -180,9 +175,9 @@ class MyHeader extends HTMLElement {
                             href="about.html"><span>About Us</span></a>
                         <!-- sub menu start-->
                         <ul class="main-menu__sub-list sub-list--style-2">
-                            <li><a href="team.html"><span>Board of Directors</span></a></li>
-                            <li><a href="team.html"><span>List of KMP</span></a></li>
-                            <li><a href="locations.html"><span>Office Locations</span></a></li>
+                            <li><a href="bod.html"><span>Board of Directors</span></a></li>
+                            <li><a href="kmp.html"><span>List of KMP</span></a></li>
+                            <li><a href="officelocations.html"><span>Office Locations</span></a></li>
                         </ul>
                         <!-- sub menu end-->
                     </li>
@@ -191,10 +186,10 @@ class MyHeader extends HTMLElement {
                      
                     </li>
                     <li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link"
-                            href=""><span>Network</span></a>
+                            href="network.html"><span>Network</span></a>
                         <!-- sub menu start-->
                         <ul class="main-menu__sub-list">
-                            <li><a href="service-details.html"><span>Overseas Network</span></a></li>
+                            <li><a href="overseasnetwork.html"><span>Overseas Network</span></a></li>
                         </ul>
                         <!-- sub menu end-->
                     </li>
