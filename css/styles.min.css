@@ -2126,6 +2126,312 @@ html {
     justify-content: space-around !important
 }
 
+
+
+/*--------------------------------------------------------------
+# Team Details
+--------------------------------------------------------------*/
+.team-details {
+    position: relative;
+    display: block;
+  }
+  
+  .team-details__top {
+    padding: 0 0 120px;
+  }
+  
+  .team-details-shape-1 {
+    position: absolute;
+    bottom: -270px;
+    right: 0;
+    opacity: 0.5;
+    z-index: 2;
+  }
+  .team-details-shape-1 img {
+    width: auto;
+  }
+  
+  .team-details__top-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .alignmt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .team-details__top-img {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  /* .team-details__top-img img {
+    width: 100%;
+  } */
+  
+  .team-details__big-text {
+    font-size: 80px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #eef0f6;
+    letter-spacing: 0.35em;
+    font-weight: 400;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    top: 209px;
+    left: -325px;
+  }
+  
+  .team-details__top-right {
+    position: relative;
+    display: block;
+    margin-left: 70px;
+    
+  }
+  @media only screen and (max-width: 991px) {
+    .team-details__top-right {
+      margin-top: 70px;
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 991.20px){
+  .box{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  }
+  
+  /* .con{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  
+  @media screen and (min-width: 768px) {
+    .con {
+      flex-direction: column;
+    }
+   
+    #r1 {
+      order: 2;
+    }
+  } */
+  
+  
+  
+  .team-details__top-content {
+    position: relative;
+    display: block;
+    margin-top: -11px;
+  }
+  .bod_head{
+    color:#232425;
+    margin-top:60px;
+  }
+  
+  .team-details__top-name {
+    font-size: 35px;
+    font-weight: bolder;
+    color: #1e2434;
+    line-height: 50px;
+    margin-bottom: 3px;
+    text-align: center;
+  
+  }
+  
+  .team-details__top-title {
+    text-align: center;
+    font-size: 16px;
+    color: var(--theme-color1);
+    margin-bottom: 5px;
+  }
+  
+  .team-details__social {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 28px;
+  }
+  .team-details__social a {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--theme-color1);
+    color: var(--text-color-bg-theme-color1);
+    font-size: 15px;
+    border-radius: 50%;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .team-details__social a:hover {
+    background-color: var(--theme-color2);
+    color: var(--text-color-bg-theme-color2);
+  }
+  .team-details__social a + a {
+    margin-left: 10px;
+  }
+  
+  .team-details__top-text-1 {
+    font-size: 30px;
+    color: var(--theme-color1);
+    line-height: 45px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  .team-details__top-text-2 {
+    padding-top: 23px;
+    padding-bottom: 35px;
+  }
+  
+  .team-details__bottom {
+    position: relative;
+    display: block;
+    border-top: 1px solid #e4e5ea;
+    padding-top: 110px;
+  }
+  
+  .team-details__bottom-left {
+    position: relative;
+    display: block;
+    margin-right: 70px;
+  }
+  
+  .team-details__bottom-left-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+  }
+  
+  .team-details__bottom-left-text {
+    padding-top: 30px;
+  }
+  
+  .team-details__bottom-right {
+    position: relative;
+    display: block;
+    margin-left: 70px;
+    margin-top: 1px;
+  }
+  @media only screen and (max-width: 991px) {
+    .team-details__bottom-right {
+      margin-left: 0;
+    }
+  }
+  
+  .team-details__progress {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .team-details__progress .bar {
+    position: relative;
+    width: 100%;
+    height: 13px;
+    background-color: #eef0f6;
+    border-radius: 7px;
+    margin-bottom: 22px;
+  }
+  .team-details__progress .bar-inner {
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 13px;
+    border-radius: 7px;
+    background-color: var(--theme-color1);
+    -webkit-transition: all 1500ms ease;
+    transition: all 1500ms ease;
+  }
+  .team-details__progress .count-text {
+    position: absolute;
+    right: 0px;
+    bottom: 21px;
+    color: var(--theme-color1);
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    opacity: 0;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .team-details__progress .bar-inner.counted .count-text {
+    opacity: 1;
+  }
+  .team-details__progress .bar.marb-0 {
+    margin-bottom: 0;
+  }
+  
+  .team-details__progress-single {
+    position: relative;
+    display: block;
+  }
+  
+  .team-details__progress-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--theme-color1);
+    margin-bottom: 6px;
+  }
+  
+  .team-contact-form {
+    background-color: #eef0f6;
+  }
+  .team-contact-form input[type=text],
+  .team-contact-form input[type=email] {
+    background-color: #fff;
+  }
+  .team-contact-form textarea {
+    background-color: #fff;
+    height: 180px;
+  }
+
+  #BoDAbt{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    
+  }
+  #BoDAbt2{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+  }
+  
+
+
+  /*--------------------------------------------------------------
+# Project Details
+--------------------------------------------------------------*/
+.project-details__img {
+    display: flex;
+    justify-content: center;
+  }
+  .project-details__img img {
+    border: 10px ridge #113629;
+    border-radius: 30px ;
+  }
 .align-items-start {
     -ms-flex-align: start !important;
     -webkit-box-align: start !important;

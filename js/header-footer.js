@@ -234,7 +234,7 @@ class MyFooter extends HTMLElement {
                         <li><a href="">Office Locations</a></li>
 
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="">Network</a></li>
+                        <li><a href="network.html">Network</a></li>
                         <li><a href="">Achievements</a></li>
                         <li><a href="contacts.html">Contact Us</a></li>
                         <li><a href="request.html">Get a Quote</a></li>
