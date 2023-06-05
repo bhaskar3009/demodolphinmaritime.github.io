@@ -265,7 +265,9 @@ svg {
 }
 
 table {
-    border-collapse: collapse
+    border-collapse: collapse;
+        border-spacing: 10px
+
 }
 
 caption {
