@@ -293,7 +293,7 @@ class MyFooter extends HTMLElement {
                             policy</a><a href="">Cookies</a></div>
                 </div>
                 <div class="col-lg-6 text-sm-center text-lg-right">
-                    <div class="page-footer__copyright">&copy; Copyright 2023 by  <a class="CW" href="index.html">Sahara Maritime Pvt Ltd.</a> All rights Reserved.</div>
+                    <div class="page-footer__copyright">&copy; Copyright 2023 by  <a class="CW" href="index.html">Dolphin Maritime Pvt Ltd.</a> All rights Reserved.</div>
                 </div>
             </div>
         </div>
