@@ -4,7 +4,7 @@ let dots = document.querySelectorAll('.dot');
 var interval = 3000;
 
 // Second banner
-var secondEventTitle = 'Hi! *Freshmen* Orientation Day';
+var secondEventTitle = 'Dolphin Maritime';
 
 // Third banner
 var thirdEventDate = new Date('2023-02-01'); // pull this from database
