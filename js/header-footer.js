@@ -1,229 +1,145 @@
 class MyHeader extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
-        <div class="menu-dropdown">
-        <div class="menu-dropdown__inner" data-value="start">
-            <div class="screen screen--start">
-                <div class="menu-dropdown__close">
-                    <svg class="icon">
-                        <use xlink:href="#close"></use>
-                    </svg>
+  connectedCallback() {
+    this.innerHTML = `
+        <header class="main-header header-style-one">
+        
+
+        <!-- Header Lower -->
+        <div class="header-lower">
+            <!-- Main box -->
+            <div class="main-box">
+                <div class="logo-box">
+                    <div class="logo"><a href="index.html"><img src="img/main_logo.jpg" alt="" title="Sahara Maritime"></a></div>
                 </div>
-                <div class="d-block d-lg-none bottom-20">
-                    <div class="screen__item screen--trigger item--active" data-category="screen-one">
-                        <span>Home</span><span>
-                            <svg class="icon">
-                                <use xlink:href="#chevron-right"></use>
-                            </svg></span>
-                    </div>
-                    <div class="screen__item screen--trigger" data-category="screen-two">
-                        <span>About Us</span><span>
-                            <svg class="icon">
-                                <use xlink:href="#chevron-right"></use>
-                            </svg></span>
-                    </div>
-                    <div class="screen__item screen--trigger" data-category="screen-three">
-                        <span>Services</span><span>
-                            <svg class="icon">
-                                <use xlink:href="#chevron-right"></use>
-                            </svg></span>
-                    </div>
-                    <div class="screen__item screen--trigger" data-category="screen-three">
-                        <span>Network</span><span>
-                            <svg class="icon">
-                                <use xlink:href="#chevron-right"></use>
-                            </svg></span>
-                    </div>
-                    <div class="screen__item screen--trigger" data-category="screen-five">
-                        <span>Achievements</span><span>
-                            <svg class="icon">
-                                <use xlink:href="#chevron-right"></use>
-                            </svg></span>
-                    </div>
-                    <div class="screen__item screen--trigger" data-category="screen-four">
-                        <span>Contact Us</span><span>
-                            <svg class="icon">
-                                <use xlink:href="#chevron-right"></use>
-                            </svg></span>
-                    </div>
-                </div>
-    
-                <div class="menu-dropdown__block top-50"><span class="block__title">Email</span><a class="screen__link"
-                        href="mailto:info@dolphinmaritime.in">info@dolphinmaritime.in</a></div>
-                <div class="menu-dropdown__block top-20">
-                    <span class="block__title">Phone number</span>
-                    <a class="screen__link" href="tel:+912266310673">+91-22-66310673</a>
-                </div>
-                <div class="menu-dropdown__block">
-                    <ul class="socials list--reset">
-                        <li class="socials__item"><a class="socials__link" href="#">
-                                <svg class="icon">
-                                    <use xlink:href="#facebook"></use>
-                                </svg></a></li>
-                        <li class="socials__item"><a class="socials__link" href="#">
-                                <svg class="icon">
-                                    <use xlink:href="#twitter"></use>
-                                </svg></a></li>
-                        <li class="socials__item"><a class="socials__link" href="#">
-                                <svg class="icon">
-                                    <use xlink:href="#linkedin"></use>
-                                </svg></a></li>
-                        <li class="socials__item"><a class="socials__link" href="#">
-                                <svg class="icon">
-                                    <use xlink:href="#inst"></use>
-                                </svg></a></li>
-                    </ul>
-                </div>
-                <div class="menu-dropdown__block top-50"><a class="button button--filled" href="request.html">Get a
-                        Quote</a>
-                </div>
-            </div>
-        </div>
-        <div class="menu-dropdown__inner" data-value="screen-one">
-            <div class="screen screen--sub">
-                <div class="screen__heading">
-                    <h6 class="screen__back">
-                        <svg class="icon">
-                            <use xlink:href="#chevron-left"></use>
-                        </svg> <span>Home</span>
-                    </h6>
-                </div>
-            </div>
-        </div>
-        <div class="menu-dropdown__inner" data-value="screen-two">
-            <div class="screen screen--sub">
-                <div class="screen__heading">
-                    <h6 class="screen__back">
-                        <svg class="icon">
-                            <use xlink:href="#chevron-left"></use>
-                        </svg> <span>About Us</span>
-                    </h6>
-                </div>
-                <div class="screen__item"><a class="screen__link" href="bod.html">Board Of Directors</a></div>
-                <div class="screen__item"><a class="screen__link" href="kmp.html">List Of KMP</a></div>
-                <div class="screen__item"><a class="screen__link" href="officelocations.html">Office Locations</a></div>
-            </div>
-        </div>
-        <div class="menu-dropdown__inner" data-value="screen-three">
-            <div class="screen screen--sub">
-                <div class="screen__heading">
-                    <h6 class="screen__back">
-                        <svg class="icon">
-                            <use xlink:href="#chevron-left"></use>
-                        </svg> <span>Services</span>
-                    </h6>
-                </div>
-    
-            </div>
-        </div>
-        <div class="menu-dropdown__inner" data-value="screen-four">
-            <div class="screen screen--sub">
-                <div class="screen__heading">
-                    <h6 class="screen__back">
-                        <svg class="icon">
-                            <use xlink:href="#chevron-left"></use>
-                        </svg> <span>Network</span>
-                    </h6>
-                </div>
-                <div class="screen__item"><a class="screen__link" href="overseasnetwork.html">Overseas Network</a></div>
-    
-            </div>
-        </div>
-        <div class="menu-dropdown__inner" data-value="screen-five">
-            <div class="screen screen--sub">
-                <div class="screen__heading">
-                    <h6 class="screen__back">
-                        <svg class="icon">
-                            <use xlink:href="#chevron-left"></use>
-                        </svg> <span>Achievements</span>
-                    </h6>
-                </div>
-            </div>
-        </div>
-        <div class="menu-dropdown__inner" data-value="screen-six">
-            <div class="screen screen--sub">
-                <div class="screen__heading">
-                    <h6 class="screen__back">
-                        <svg class="icon">
-                            <use xlink:href="#chevron-left"></use>
-                        </svg> <span>Contact Us</span>
-                    </h6>
-                </div>
-            </div>
-        </div>
-    </div>
-    <header class="page-header">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-8 col-md-6 col-lg-3 d-flex align-items-center">
-                <!-- menu-trigger start-->
-                <div class="hamburger d-none d-md-inline-block">
-                    <div class="hamburger-inner"></div>
-                </div>
-                <!-- menu-trigger end-->
-                <div class="page-header__logo"><a href="index.html"><img style="max-width: 100%; height: auto;"
-                            src="img/main_logo.jpg" alt="logo" /></a></div>
-            </div>
-            <div class="col-lg-7 d-none d-lg-flex justify-content-center">
-                <!-- main menu start-->
-                <ul class="main-menu">
-                    <li class="main-menu__item main-menu__item--active"><a class="main-menu__link"
-                            href="index.html"><span>Home</span></a>
-                      
-                    </li>
-                    <li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link"
-                            href="about.html"><span>About Us</span></a>
-                        <!-- sub menu start-->
-                        <ul class="main-menu__sub-list sub-list--style-2">
-                            <li><a href="bod.html"><span>Board of Directors</span></a></li>
-                            <li><a href="kmp.html"><span>List of KMP</span></a></li>
-                            <li><a href="officelocations.html"><span>Office Locations</span></a></li>
+
+                <!--Nav Box-->
+                <div class="nav-outer">
+
+                    <nav class="nav main-menu">
+                        <ul class="navigation">
+
+                            <li><a href="index.html">Home</a>
+                            </li>
+
+                            <li class="dropdown"><a href="page-about.html">About us</a>
+                            <ul>
+                                <li class="dropdown"><a href="#">The team</a>
+                                    <ul>
+                                    <li><a href="page-BOD.html">Board of Directors</a></li>
+                                    <li><a href="page-List-KMP.html">List of KMP</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            </li>
+                            <li><a href="page-services.html">Services</a>
+                            </li>
+
+                            <li><a href="page-get-quote.html">Get A Quote</a></li>
+
+                            <li><a href="page-clients.html">Client</a></li>
+
+                            <li class="dropdown"><a href="#">Investor</a>
+                                <ul>
+                                <li><a href="#">Committee Board</a></li>
+                                    <li><a href="#">Financial Results</a></li>
+                                    <li><a href="#">Shareholding Patterns</a></li>
+                                    <li><a href="#">Shareholding Documents</a></li>
+                                    <li><a href="#">Corporate Policies</a></li>
+                                    <li><a href="#">Annual Reports</a></li>
+                                    <li><a href="#">Initial Public Offer(IPO)</a></li>
+                                    <li><a href="#">Annual Returns</a></li>
+                                    <li><a href="#">News and Information</a></li>
+                                    <li><a href="#">Corporate Announcement</a></li>
+                                    <li><a href="#">Corporate Information</a></li>
+                                    <li><a href="#">AGM Notice</a></li>
+                                    <li><a href="#">Disclosure</a></li>
+                                    
+                                    
+                                    
+                                </ul>
+                            </li>
+                            <li><a href="">Awards & Certificates</a></li>
+                            <li><a href="page-contact.html">Contact</a></li>
+
                         </ul>
-                        <!-- sub menu end-->
-                    </li>
-                    <li class="main-menu__item"><a class="main-menu__link"
-                            href="services.html"><span>Services</span></a>
-                     
-                    </li>
-                    <li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link"
-                            href="network.html"><span>Network</span></a>
-                        <!-- sub menu start-->
-                        <ul class="main-menu__sub-list">
-                            <li><a href="overseasnetwork.html"><span>Overseas Network</span></a></li>
-                        </ul>
-                        <!-- sub menu end-->
-                    </li>
-                    <li class="main-menu__item"><a class="main-menu__link"
-                            href="javascript:void(0);"><span>achievements</span></a>
+                    </nav>
+                    <!-- Main Menu End-->
+
+                    <div class="outer-box">
+                    
+                        <!-- Mobile Nav toggler -->
+                        <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header Lower -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+
+            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+            <nav class="menu-box">
+                <div class="upper-box">
+                    <div class="nav-logo"><a href="index-2.html"><img src="images/logo-2.png" alt="" title="Fesho"></a></div>
+                    <div class="close-btn"><i class="icon fa fa-times"></i></div>
+                </div>
+
+                <ul class="navigation clearfix">
+                    <!--Keep This Empty / Menu will come through Javascript-->
+                </ul>
+                <ul class="contact-list-one">
+                    <li>
+                        <!-- Contact Info Box -->
+                        <div class="contact-info-box">
+                            <i class="icon lnr-icon-phone-handset"></i>
+                            <span class="title">Call Now</span>
+                            <a href="tel:+91 9819980001">+91 9819980001</a>
+                            
+                        </div>
+                        <div class="contact-info-box">
+                        <a href="tel: +022 23479362"> +022 23479362</a>
+                        </div>
                         
                     </li>
-                    <li class="main-menu__item"><a class="main-menu__link" href="contacts.html"><span>Contact
-                                Us</span></a>
-                       
+                    <li>
+                        <!-- Contact Info Box -->
+                        <div class="contact-info-box">
+                            <span class="icon lnr-icon-envelope1"></span>
+                            <span class="title">Send Email</span>
+                            <a href="mailto:saharamaritime@hotmail.com
+                            ">saharamaritime@hotmail.com
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Contact Info Box -->
+                        <div class="contact-info-box">
+                            <span class="icon lnr-icon-clock"></span>
+                            <span class="title">Send Email</span>
+                            Mon - Sat 11.00 AM- 07.00 PM, Sunday - CLOSED
+                        </div>
                     </li>
                 </ul>
-                <!-- main menu end-->
-            </div>
-            <div class="col-4 col-md-6 col-lg-2 d-flex justify-content-end align-items-center">
-                <a class="button button--filled" href="request.html">Get a Quote</a>
-                <!-- menu-trigger start-->
-                <div class="hamburger d-inline-block d-md-none">
-                    <div class="hamburger-inner"></div>
-                </div>
-                <!-- menu-trigger end-->
-            </div>
-        </div>
-    </div>
-</header>
-      `
-    }
+
+
+                
+            </nav>
+        </div><!-- End Mobile Menu -->
+        <!-- Sticky Header  -->
+        <!-- End Sticky Menu -->
+    </header>
+      `;
+  }
 }
 
-customElements.define('my-header', MyHeader)
+customElements.define("my-header", MyHeader);
 
 class MyFooter extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `<footer class="page-footer"><img class="section--bg b0 r0" src="img/footer-bg.png" alt="bg" />
+  connectedCallback() {
+    this.innerHTML = `<footer class="page-footer"><img class="section--bg b0 r0" src="img/footer-bg.png" alt="bg" />
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-4">
@@ -298,8 +214,8 @@ class MyFooter extends HTMLElement {
             </div>
         </div>
     </footer>
-        `
-    }
+        `;
+  }
 }
 
-customElements.define('my-footer', MyFooter)
+customElements.define("my-footer", MyFooter);
