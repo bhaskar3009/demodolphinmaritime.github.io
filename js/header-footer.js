@@ -9,10 +9,10 @@ class MyHeader extends HTMLElement {
             <!-- Main box -->
             <div class="main-box">
                 <div class="logo-box">
-                    <div class="logo"><a href="index.html"><img src="img/main_logo.jpg" alt="" title="Sahara Maritime"></a></div>
+                    <div class="logo"><a href="index.html"><img src="img/main_logo.jpg" alt="" title="Dolphin Maritime"></a></div>
                 </div>
 
-                <!--Nav Box-->
+                        <!--Nav Box-->
                 <div class="nav-outer">
 
                     <nav class="nav main-menu">
@@ -21,46 +21,24 @@ class MyHeader extends HTMLElement {
                             <li><a href="index.html">Home</a>
                             </li>
 
-                            <li class="dropdown"><a href="page-about.html">About us</a>
+                            <li class="dropdown"><a href="about.html">About us</a>
                             <ul>
-                                <li class="dropdown"><a href="#">The team</a>
-                                    <ul>
-                                    <li><a href="page-BOD.html">Board of Directors</a></li>
-                                    <li><a href="page-List-KMP.html">List of KMP</a></li>
-                                    </ul>
-                                </li>
-
+                                    <li><a href="bod.html">Board of Directors</a></li>
+                                    <li><a href="kmp.html">List of KMP</a></li>
+                                    <li><a href="officelocations.html">Office Locations</a></li>
+                                  
                             </ul>
                             </li>
-                            <li><a href="page-services.html">Services</a>
+                            <li><a href="services.html">Services</a>
                             </li>
-
-                            <li><a href="page-get-quote.html">Get A Quote</a></li>
-
-                            <li><a href="page-clients.html">Client</a></li>
-
-                            <li class="dropdown"><a href="#">Investor</a>
+                            <li class="dropdown"><a href="network.html">Network</a>
                                 <ul>
-                                <li><a href="#">Committee Board</a></li>
-                                    <li><a href="#">Financial Results</a></li>
-                                    <li><a href="#">Shareholding Patterns</a></li>
-                                    <li><a href="#">Shareholding Documents</a></li>
-                                    <li><a href="#">Corporate Policies</a></li>
-                                    <li><a href="#">Annual Reports</a></li>
-                                    <li><a href="#">Initial Public Offer(IPO)</a></li>
-                                    <li><a href="#">Annual Returns</a></li>
-                                    <li><a href="#">News and Information</a></li>
-                                    <li><a href="#">Corporate Announcement</a></li>
-                                    <li><a href="#">Corporate Information</a></li>
-                                    <li><a href="#">AGM Notice</a></li>
-                                    <li><a href="#">Disclosure</a></li>
-                                    
-                                    
-                                    
+                                    <li><a href="overseasnetwork.html">Overseas Network</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Awards & Certificates</a></li>
-                            <li><a href="page-contact.html">Contact</a></li>
+                            <li><a href="achievements.html">AChievements</a></li>
+                            <li><a href="contacts.html">Contact Us</a></li>
+                            <li><a href="request.html">Get A Quote</a></li>
 
                         </ul>
                     </nav>
@@ -69,7 +47,7 @@ class MyHeader extends HTMLElement {
                     <div class="outer-box">
                     
                         <!-- Mobile Nav toggler -->
-                        <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                        <div class="mobile-nav-toggler"><span class="icon lnr-icon-menu"></span></div>
                     </div>
                 </div>
             </div>
@@ -83,7 +61,7 @@ class MyHeader extends HTMLElement {
             <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
             <nav class="menu-box">
                 <div class="upper-box">
-                    <div class="nav-logo"><a href="index-2.html"><img src="images/logo-2.png" alt="" title="Fesho"></a></div>
+                    <div class="nav-logo"><a href="index.html"><img src="img/main_logo.jpg" alt="" title="dolphin"></a></div>
                     <div class="close-btn"><i class="icon fa fa-times"></i></div>
                 </div>
 
@@ -96,30 +74,31 @@ class MyHeader extends HTMLElement {
                         <div class="contact-info-box">
                             <i class="icon lnr-icon-phone-handset"></i>
                             <span class="title">Call Now</span>
-                            <a href="tel:+91 9819980001">+91 9819980001</a>
+                            <a href="tel:+912266310673">+91 2266310673</a>
                             
                         </div>
-                        <div class="contact-info-box">
-                        <a href="tel: +022 23479362"> +022 23479362</a>
-                        </div>
+                        
                         
                     </li>
                     <li>
                         <!-- Contact Info Box -->
                         <div class="contact-info-box">
-                            <span class="icon lnr-icon-envelope1"></span>
+                            <span class="icon lnr-icon-envelope"></span>
                             <span class="title">Send Email</span>
-                            <a href="mailto:saharamaritime@hotmail.com
-                            ">saharamaritime@hotmail.com
+                            <a href="mailto:info@dolphinmaritime.in">info@dolphinmaritime.in
                             </a>
                         </div>
                     </li>
                     <li>
-                        <!-- Contact Info Box -->
+                        <!-- Timing Info Box -->
                         <div class="contact-info-box">
                             <span class="icon lnr-icon-clock"></span>
-                            <span class="title">Send Email</span>
-                            Mon - Sat 11.00 AM- 07.00 PM, Sunday - CLOSED
+                            <span class="title">Timing</span>
+                            <span>Mon - Fri:- 10:00 AM - 06:00 PM</span>
+                            <br>
+                            <span>Sat: 10.00 AM - 04.00 PM</span>
+                            <br>
+                            <span>Sun: Closed</span>
                         </div>
                     </li>
                 </ul>

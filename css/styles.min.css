@@ -162,7 +162,8 @@ dl,
 ol,
 ul {
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    list-style-type:none
 }
 
 ol ol,
@@ -2513,6 +2514,7 @@ Main Header
     display: block;
     width: 100%;
   }
+
   
   .main-header {
     position: relative;
@@ -12756,6 +12758,10 @@ margin: auto;}
     .service-block .content-box .icon{
 		top: -40px;
 	}
+    .header-style-two .header-lower .logo-box{
+		min-width: auto;
+		margin-right: 0px;
+	}
 
 }
 
@@ -13259,6 +13265,11 @@ margin: auto;}
     animation: animate 2s linear infinite;
     -webkit-animation-delay: 1s;
     animation-delay: 1s
+}
+@media only screen and (max-width: 424px){
+	.header-lower .logo-box .logo img{
+		max-width: 120px;
+	}
 }
 
 @-webkit-keyframes animate {
