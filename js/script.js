@@ -1,3 +1,11 @@
+// Optional JavaScript to toggle the achievements on click
+const achievements = document.querySelectorAll('.achievement');
+
+achievements.forEach((achievement) => {
+  achievement.addEventListener('click', () => {
+    achievement.classList.toggle('active');
+  });
+});
 
 
 (function($) {

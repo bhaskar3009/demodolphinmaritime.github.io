@@ -12,6 +12,42 @@
 @import url("tm-bs-mp.css");
 @import url("tm-utility-classes.css");
 
+
+.achievements {
+    text-align: center;
+  }
+  
+  .achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  .achievement {
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  
+  .achievement img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .achievement-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .achievement-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
 :root {
     --theme-color1: #43aa5c;
     --theme-color2: #220761;
