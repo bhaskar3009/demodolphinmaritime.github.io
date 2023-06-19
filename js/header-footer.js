@@ -23,10 +23,13 @@ class MyHeader extends HTMLElement {
 
                             <li class="dropdown"><a href="about.html">About us</a>
                             <ul>
+                            <li class="dropdown"><a href="#">The team</a>
+                                    <ul>
                                     <li><a href="bod.html">Board of Directors</a></li>
                                     <li><a href="kmp.html">List of KMP</a></li>
                                     <li><a href="officelocations.html">Office Locations</a></li>
-                                  
+                                    </ul>
+                                </li>
                             </ul>
                             </li>
                             <li><a href="services.html">Services</a>
