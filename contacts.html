@@ -342,6 +342,8 @@
 	<!-- form submit -->
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.form.min.js"></script>
+
+
 	<script>
 			(function ($) {
 				$("#contact_form").validate({
@@ -393,13 +395,13 @@
 			let body = "Name: " + name + "<br> Email: " + mail + "<br> subject: " + subject + "<br> phone: " + phone + "<br> message: " + msg
 			// console.log(body)
 			Email.send({
-				SecureToken: "6819767b-bb1e-42cd-9f70-2041df18a2a5",
-				To: 'bhaskarchavan2001@gmail.com',
-				From: "mailsaharamaritime@gmail.com",
+				SecureToken: "9163253d-4459-4100-91ed-f6fa185bd363",
+				To: "bhaskarchavan2001@gmail.com",
+				From: "kbchavan2001@gmail.com",
 				Subject: subject,
 				Body: body
 			}).then(
-				message => alert(message)
+				message => alert("Message sent successfully")
 			);
 		}
 	</script>
