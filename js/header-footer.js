@@ -23,11 +23,11 @@ class MyHeader extends HTMLElement {
 
                             <li class="dropdown"><a href="about.html">About us</a>
                             <ul>
-                            <li class="dropdown"><a href="#">The team</a>
+                            <li class="dropdown eff"><a href="#">The team</a>
                                     <ul>
-                                    <li><a href="bod.html">Board of Directors</a></li>
-                                    <li><a href="kmp.html">List of KMP</a></li>
-                                    <li><a href="officelocations.html">Office Locations</a></li>
+                                    <li class="eff"><a href="bod.html">Board of Directors</a></li>
+                                    <li class="eff"><a href="kmp.html">List of KMP</a></li>
+                                    <li class="eff"><a href="officelocations.html">Office Locations</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -36,7 +36,7 @@ class MyHeader extends HTMLElement {
                             </li>
                             <li class="dropdown"><a href="network.html">Network</a>
                                 <ul>
-                                    <li><a href="overseasnetwork.html">Overseas Network</a></li>
+                                    <li class="eff"><a href="overseasnetwork.html">Overseas Network</a></li>
                                 </ul>
                             </li>
                             <li><a href="achievements.html">AChievements</a></li>
