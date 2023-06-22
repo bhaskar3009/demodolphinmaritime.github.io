@@ -21,6 +21,14 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+	rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
+	crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
 	<!-- web-font loader-->
 	<script>
 		WebFontConfig = {
@@ -404,106 +412,91 @@
 
 		<main class="main">
 			<!-- promo start-->
-			<div class="promo">
-				<div class="promo-slider">
-
-					<div class="promo-slider__item">
-
-						<div class="promo-slider__layout"></div>
-						<picture>
-							<source srcset="img/promo_3.jpg" media="(min-width: 992px)" /><img class="img--bg"
-								src="img/promo_3.jpg" alt="img" />
-						</picture>
-						<!-- <div class="align-container">
-								<div class="align-container__item">
-									<div class="container">
-										<div class="row">
-											<div class="col-lg-9 col-xl-7">
-												<div class="promo-slider__wrapper-1"><span
-														class="promo-slider__overlay">Dolphin</span>
-													<h2 class="promo-slider__title">Transportation Services around the World
-													</h2>
-												</div>
-												<div class="promo-slider__wrapper-2">
-													<p class="promo-slider__subtitle">Rockling Devario deep sea bonefish
-														cutthroat trout streamer fish kaluga sailback scorpionfish sand dab,
-														turkeyfish golden loach sand diver. Leopard danio píntano
-														bonnetmouth; blue whiting, suckermouth armored catfish luderick
-														blackchin kingfish.</p>
-												</div>
-												<div class="promo-slider__wrapper-3"><a class="button button--promo"
-														href="#"><span>Explore more</span>
-														<svg class="icon">
-															<use xlink:href="#arrow"></use>
-														</svg></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div> -->
-					</div>
-					<div class="promo-slider__item text-center">
-						<div class="promo-slider__layout"></div>
-						<picture>
-							<source srcset="img/promo2.jpg" media="(min-width: 992px)" /><img class="img--bg"
-								src="img/promo2.jpg" alt="img" />
-						</picture>
-						<div class="align-container">
-								<div class="align-container__item">
-									<div class="container">
-										<div class="row">
-											<div class="col-12">
-												<div class="promo-slider__wrapper-1"><span
-														class="promo-slider__overlay position-center">Dolphin</span>
-													<h2 class="promo-slider__title">Worldwide Shipping</h2>
-												</div>
-												<div class="promo-slider__wrapper-2">
-													<p class="promo-slider__subtitle">Roach yellowfin cutthroat trout zebra
-														pleco ocean sunfish temperate bass pikehead elephant fish.
-														Long-finned char northern pike bluegill temperate. Leopard danio
-														píntano bonnetmouth; blue whiting, suckermouth armored catfish
-														luderick blackchin kingfish.</p>
-												</div>
-												<div class="promo-slider__wrapper-3"><a class="button button--promo"
-														href="#"><span>Explore more</span>
-														<svg class="icon">
-															<use xlink:href="#arrow"></use>
-														</svg></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-					</div>
-
+			<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="img/promo_3.jpg" class="mnsldr d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[15,15,15,15]"
+                                data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
+                                data-type="text" data-height="none" data-width="['750','750','750','650']"
+                                data-whitespace="normal" data-hoffset="['0','0','0','0']"
+                                data-voffset="['-195','-160','-160','-140']" data-x="['left','left','left','left']"
+                                data-y="['middle','middle','middle','middle']"
+                                data-textalign="['top','top','top','top']"
+                                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                                <span class="title">Dolphin Maritime Agencies Pvt. Ltd.</span>
+                            </div>
+							<div id="kar" class="tp-caption" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[15,15,15,15]" data-paddingright="[15,15,15,15]"
+                                data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text"
+                                data-height="none" data-width="['750','750','750','650']" data-whitespace="normal"
+                                data-hoffset="['0','0','0','0']" data-voffset="['-70','-40','-40','-30']"
+                                data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']"
+                                data-textalign="['top','top','top','top']"
+                                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                                <h2 id="bn">The Difficult We do Immediately <br>The Impossible takes A Little Longer </h2>
+                            </div>
+							<div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[15,15,15,15]"
+                                data-paddingright="[15,15,15,15]" data-paddingtop="[0,0,0,0]"
+                                data-responsive_offset="on" data-type="text" data-height="none"
+                                data-width="['700','750','700','450']" data-whitespace="normal"
+                                data-hoffset="['0','0','0','0']" data-voffset="['100','120','120','120']"
+                                data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']"
+                                data-textalign="['top','top','top','top']"
+                                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                                <a href="about.html" class="theme-btn btn-style-one hvr-light"><span
+                                        class="btn-title">Explore More</span></a>
+                            </div>
+					  </div>
+				  </div>
+				  <div class="carousel-item">
+					<img src="img/promo2.jpg" class="mnsldr d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						 <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[15,15,15,15]"
+                                data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
+                                data-type="text" data-height="none" data-width="['750','750','750','650']"
+                                data-whitespace="normal" data-hoffset="['0','0','0','0']"
+                                data-voffset="['-195','-160','-160','-140']" data-x="['left','left','left','left']"
+                                data-y="['middle','middle','middle','middle']"
+                                data-textalign="['top','top','top','top']"
+                                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                                <span class="title">Dolphin Maritime Agencies Pvt. Ltd.</span>
+                            </div>
+							<div id="kar" class="tp-caption" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[15,15,15,15]" data-paddingright="[15,15,15,15]"
+                                data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text"
+                                data-height="none" data-width="['750','750','750','650']" data-whitespace="normal"
+                                data-hoffset="['0','0','0','0']" data-voffset="['-70','-40','-40','-30']"
+                                data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']"
+                                data-textalign="['top','top','top','top']"
+                                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                                <h2 id="bn">Navigating the Waves of Excellence</h2>
+                            </div>
+							<div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[15,15,15,15]"
+                                data-paddingright="[15,15,15,15]" data-paddingtop="[0,0,0,0]"
+                                data-responsive_offset="on" data-type="text" data-height="none"
+                                data-width="['700','750','700','450']" data-whitespace="normal"
+                                data-hoffset="['0','0','0','0']" data-voffset="['100','120','120','120']"
+                                data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']"
+                                data-textalign="['top','top','top','top']"
+                                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                                <a href="about.html" class="theme-btn btn-style-one hvr-light"><span
+                                        class="btn-title">Explore More</span></a>
+                            </div>
+					  </div>
+				  </div>
+				  
 				</div>
-				<div class="promo__lower">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-md-5 col-lg-7 col-xl-8 d-flex align-items-start">
-								<div class="promo-slider__nav"></div>
-								<div class="promo-slider__count"></div>
-							</div>
-							<div class="col-md-7 col-lg-5 col-xl-4 top-20 top-md-0">
-								<!-- <form class="tracking-form" action="javascript:void(0);" autocomplete="off">
-									<label class="tracking-form__label">
-										<input class="tracking-form__input" type="text" name="tracking"
-											required="required" /><span class="tracking-form__placeholder">Track your
-											shippment</span>
-									</label>
-									<button class="tracking-form__submit" type="submit">
-										<svg class="icon">
-											<use xlink:href="#arrow"></use>
-										</svg>
-									</button>
-								</form> -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
 			<!-- promo end-->
 
 			<!-- section start-->
