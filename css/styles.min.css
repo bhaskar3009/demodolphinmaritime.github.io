@@ -12,11 +12,136 @@
 @import url("tm-bs-mp.css");
 @import url("tm-utility-classes.css");
 
-.main .title {
+
+
+
+
+
+
+
+
+
+/*** 
+
+====================================================================
+  Main Slider
+====================================================================
+
+***/
+.main-slider {
+    position: relative;
+  }
+  .main-slider:before {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-image: url(../images/main-slider/bottom-shape.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 190px;
+    width: 100%;
+    content: "";
+    z-index: 8;
+  }
+  
+  .main-slider .title {
     position: relative;
     display: inline-block;
     font-size: 20px;
     line-height: 30px;
+    color: #ffffff;
+    padding-top: 15px;
+  }
+  .main-slider .title:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 5px;
+    width: 100%;
+    background-color: var(--bg-theme-color2);
+    border-radius: 5px;
+  }
+  .main-slider h2 {
+    position: relative;
+    display: block;
+    font-size: 3rem;
+    line-height: 1.2em;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    text-transform: capitalize;
+  }
+  .main-slider .btn-box {
+    position: relative;
+  }
+  .main-slider .theme-btn {
+    display: inline-block;
+    white-space: nowrap;
+    min-width: 200px !important;
+  }
+
+  
+@media only screen and (max-width: 767px){
+	.main-slider .title:before{
+		height: 2px;
+	}
+	
+	.main-slider .title{
+		font-size: 18px;
+		padding-top: 5px
+	}
+
+	.main-slider:before{
+		display: none;
+	}
+
+	.call-to-action .outer-box .highlighted:before,
+	.main-slider .ipad-hidden{
+		display: none !important;
+	}
+
+	.main-slider .theme-btn{
+		padding: 10px 30px;
+		line-height: 30px;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	main-slider{
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 424px){
+	.main-slider h2{
+		font-size: 38px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+    .main-slider .ipad-hidden{
+		display: none !important;
+	}
+}
+
+
+
+
+
+/* .rev-slidebg{
+    width: 100%;
+  height: auto;
+} */
+
+
+
+
+.main .title {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    /* line-height: 60px; */
     color: #b91313;
     padding-top: 15px;
     font-weight: bold;
@@ -11280,6 +11405,9 @@ Section Title
     color: #ffffff;
     -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.btn-style-one.hvr-light {
+    text-decoration: none;
 }
 
 .btn-style-one.hvr-light:hover {
