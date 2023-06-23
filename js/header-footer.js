@@ -77,7 +77,7 @@ class MyHeader extends HTMLElement {
                         <div class="contact-info-box">
                             <i class="icon lnr-icon-phone-handset"></i>
                             <span class="title">Call Now</span>
-                            <a href="tel:+912266310673">+91 2266310673</a>
+                            <a class="rmv" href="tel:+912266310673">+91 2266310673</a>
                             
                         </div>
                         
@@ -88,7 +88,7 @@ class MyHeader extends HTMLElement {
                         <div class="contact-info-box">
                             <span class="icon lnr-icon-envelope"></span>
                             <span class="title">Send Email</span>
-                            <a href="mailto:info@dolphinmaritime.in">info@dolphinmaritime.in
+                            <a class="rmv" href="mailto:info@dolphinmaritime.in">info@dolphinmaritime.in
                             </a>
                         </div>
                     </li>

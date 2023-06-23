@@ -46,6 +46,9 @@ achievements.forEach((achievement) => {
 	if($('.main-header li.dropdown ul').length){
 		$('.main-header .navigation li.dropdown').append('<div class="dropdown-btn"><i class="fa fa-angle-down"></i></div>');
 	}
+	else{
+		$('.main-header .navigation li.dropdown').append('<div class="dropdown-btn"><i class="fa fa-angle-"></i></div>');
+	}
 
 	//Mobile Nav Hide Show
 	if($('.mobile-menu').length){
