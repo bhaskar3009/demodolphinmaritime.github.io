@@ -163,7 +163,7 @@ class MyFooter extends HTMLElement {
                     </div>
                 </div>
                 <div class="col-lg-3 d-flex flex-column justify-content-between align-items-sm-center align-items-lg-end top-40 top-lg-0">
-                    <div class="page-footer__logo"><a href="index.html"><img src="img/main_logo.jpg"
+                    <div class="page-footer__logo"><a href="index.html"><img src="img/footerlogo.png"
                                 alt="logo" /></a></div>
                     <ul class="socials list--reset">
                         <li class="socials__item"><a class="socials__link" href="">
