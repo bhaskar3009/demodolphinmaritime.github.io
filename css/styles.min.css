@@ -12759,7 +12759,7 @@ form.tracking-form {
 
 }
 
-.lastbox {
+.lastbox, #lastbox1 {
     margin: auto;
 }
 
