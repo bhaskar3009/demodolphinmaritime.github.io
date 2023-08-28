@@ -9,7 +9,7 @@ class MyHeader extends HTMLElement {
             <!-- Main box -->
             <div class="main-box">
                 <div class="logo-box">
-                    <div class="logo"><a href="index.html"><img src="img/main_logo.jpg" alt="" title="Dolphin Maritime"></a></div>
+                    <div class="logo"><a href="index.html"><img src="img/main_logo.png" alt="" title="Dolphin Maritime"></a></div>
                 </div>
 
                         <!--Nav Box-->
@@ -111,6 +111,7 @@ class MyHeader extends HTMLElement {
             </nav>
         </div><!-- End Mobile Menu -->
         <!-- Sticky Header  -->
+
         <!-- End Sticky Menu -->
     </header>
       `;

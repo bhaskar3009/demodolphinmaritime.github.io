@@ -300,6 +300,7 @@
 
 	.main-header .main-box .nav-outer {
 		width: auto;
+        /* display: none; */
 	}
 
 	.header-lower .logo-box {
@@ -3598,9 +3599,12 @@ Main Header
 }
 
 .main-header .main-box {
-    position: relative;
-    left: 0px;
-    top: 0px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3618,7 +3622,7 @@ nav {}
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: -20px;
+    top: 0;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -3630,6 +3634,8 @@ nav {}
 
 .main-menu {
     position: relative;
+    width: 100%;
+
 }
 
 .main-menu .navbar-header {
@@ -4286,16 +4292,18 @@ nav {}
 
 @media only screen and (max-width: 1298px) {
 
-
+    
     .header-lower .logo-box {
         min-width: auto;
         min-height: auto;
         padding: 0;
         margin-top: -40px;
     }
+    
 
     .header-lower .logo-box .logo img {
         min-height: 80px;
+        min-width: 200px;
     }
 
 
@@ -4321,13 +4329,17 @@ nav {}
     }
 
     .main-header .logo {
-        min-width: auto;
+        width: 100%;
+    }
+    .main-header .logo .img{
+        min-width: 200px;
+
     }
 
     .main-header .main-box {
         width: 100%;
         justify-content: space-between;
-        align-items: center
+        align-items: center;
     }
 
     .main-header .main-box .nav-outer {
@@ -4342,6 +4354,9 @@ nav {}
         font-size: 24px;
         line-height: 35px;
         margin-left: 20px;
+    }
+    .main-menu{
+        display: none;
     }
 
     .header-top,
@@ -11677,6 +11692,9 @@ f .img--bg {
 
 .bg--lgray {
     background: #f3f6f5
+}
+.bg--new{
+    background: #f4f1f1
 }
 
 .bg--blue {
