@@ -846,6 +846,12 @@
 		font-size: 20px;
 	}
 }
+@media only screen and (max-width: 1360px){
+    .abc{
+        font-size: 10px;
+
+    }
+}
 
 @media only screen and (min-width: 425px) and (max-width: 576px){
     .main-slider h2{
@@ -4062,7 +4068,7 @@ nav {}
     height: 100%;
     max-height: 100%;
     overflow-y: auto;
-    background: var(--bg-theme-color1);
+    background: rgb(255, 255, 255);
     padding: 0px 0px;
     z-index: 5;
     opacity: 0;
@@ -4140,15 +4146,15 @@ nav {}
     line-height: 24px;
     padding: 10px 20px;
     font-size: 16px;
-    color: #ffffff;
-    font-weight: 400;
+    color: #0f1561;
+    font-weight: bold;
     text-transform: capitalize;
     text-decoration: none;
 }
 
 .mobile-menu .navigation li:hover>a,
 .mobile-menu .navigation li.current>a {
-    color: var(--theme-color2);
+    color: #57d846;
 }
 
 .mobile-menu .navigation li.dropdown .dropdown-btn {
@@ -4180,7 +4186,9 @@ nav {}
     padding-left: 54px;
     font-size: 14px;
     line-height: 24px;
-    color: #ffffff;
+    color: #0c504b;
+    font-weight: bold;
+
 }
 
 .contact-info-box .icon {
@@ -4195,8 +4203,8 @@ nav {}
 .contact-info-box .title {
     display: block;
     font-size: 12px;
-    color: #0c504b;
-    font-weight: 400;
+    color: #0f1561;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -4232,7 +4240,7 @@ nav {}
 }
 
 .contact-list-one li a {
-    color: #ffffff;
+    color: #0c504b;
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
 }
