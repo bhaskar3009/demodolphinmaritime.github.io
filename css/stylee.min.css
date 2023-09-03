@@ -12,13 +12,16 @@ h3 {
 .abc{
     display: flex;
     justify-content: center;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: bolder;
 
 }
 .tree {
     margin: auto;
     padding: 0;
+    /* max-width: 100%; */
+    /* overflow: auto; */
+
 }
 
 .tree:not(:empty):before,
@@ -51,7 +54,7 @@ h3 {
 }
 
 .tree.cascade li {
-    margin-left: 24px
+    margin-left: 12px
 }
 
 .tree.cascade li div {
@@ -59,7 +62,7 @@ h3 {
 }
 
 .tree.cascade li:before {
-    border-left: 1px solid #ddd;
+    border-left: 3px solid #646060;
     height: 100%;
     width: 0;
     top: 0;
@@ -67,7 +70,7 @@ h3 {
 }
 
 .tree.cascade li:after {
-    border-top: 1px solid #ddd;
+    border-top: 3px solid #4e4b4b;
     width: 12px;
     left: -12px;
     top: 24px
@@ -94,7 +97,7 @@ h3 {
 .tree.horizontal li {
     display: flex;
     align-items: center;
-    margin-left: 24px
+    margin-left: 12px
 }
 
 .tree.horizontal li div {
@@ -102,7 +105,7 @@ h3 {
 }
 
 .tree.horizontal li:before {
-    border-left: 1px solid #ddd;
+    border-left: 3px solid #4b4646;
     height: 100%;
     width: 0;
     top: 0;
@@ -122,7 +125,7 @@ h3 {
 
 .tree.horizontal li:after,
 .tree.horizontal li ul:after {
-    border-top: 1px solid #ddd;
+    border-top: 3px solid #565353;
     height: 0;
     width: 12px;
     top: 50%;
@@ -166,27 +169,27 @@ h3 {
 }
 
 .tree.vertical li:before {
-    border-left: 1px solid #ddd;
+    border-left:  3px solid #cb2727;
     height: 12px;
     width: 0;
     top: 0
 }
 
 .tree.vertical li:after {
-    border-top: 1px solid #ddd;
+    border-top:  3px solid #cb2727;
     height: 0;
     width: 100%
 }
 
 .tree.vertical li:first-child:after {
-    border-top: 1px solid #ddd;
+    border-top:  3px solid #cb2727;;
     height: 0;
     width: 50%;
     left: 50%
 }
 
 .tree.vertical li:last-child:after {
-    border-top: 1px solid #ddd;
+    border-top:  3px solid #cb2727;
     height: 0;
     width: 50%;
     right: 50%
@@ -197,7 +200,7 @@ h3 {
 }
 
 .tree.vertical li ul:before {
-    /* border-left: 1px solid #ddd; */
+    /* border-left:  3px solid #5f5959; */
     height: 12px;
     width: 0;
     top: -12px
@@ -215,7 +218,7 @@ h3 {
 .tree.vertical .cascade {
     flex-direction: column;
     align-items: start;
-    padding: 0 12px
+    padding: 0 5px
 }
 
 .tree.vertical.cascade-4>li>ul>li>ul>li>ul>li:before,
@@ -291,18 +294,27 @@ h3 {
 .tree.vertical.cascade-4>li>ul>li>ul>li>ul>li div,
 .tree.vertical.cascade-3>li>ul>li>ul>li div,
 .tree.vertical.cascade-2>li>ul>li div,
-.tree.vertical.cascade-1>li div,
 .tree.vertical .cascade div {
+    background-color: gray;
+    border-radius: 5px;
+    border: 2px solid rgb(13, 131, 62);
     margin: 0;
-    margin-top: 12px
+    margin-top: 20px
 }
+/* .tree.vertical .cascade-2>li div {
+    background-color: rgb(204, 130, 130);
+    border-radius: 5px;
+    border: 2px solid rgb(13, 131, 62);
+    margin: 0;
+    margin-top: 20px
+} */
 
 .tree.vertical.cascade-4>li>ul>li>ul>li>ul>li li,
 .tree.vertical.cascade-3>li>ul>li>ul>li li,
 .tree.vertical.cascade-2>li>ul>li li,
 .tree.vertical.cascade-1>li li,
 .tree.vertical .cascade li {
-    margin-left: 24px
+    margin-left: 15px;
 }
 
 .tree.vertical.cascade-4>li>ul>li>ul>li>ul>li li:before,
@@ -310,7 +322,7 @@ h3 {
 .tree.vertical.cascade-2>li>ul>li li:before,
 .tree.vertical.cascade-1>li li:before,
 .tree.vertical .cascade li:before {
-    border-left: 1px solid #ddd;
+    border-left: 3px solid #acc124;
     height: 100%;
     width: 0;
     top: 0;
@@ -322,7 +334,7 @@ h3 {
 .tree.vertical.cascade-2>li>ul>li li:after,
 .tree.vertical.cascade-1>li li:after,
 .tree.vertical .cascade li:after {
-    border-top: 1px solid #ddd;
+    border-top: 3px solid #5f5959;
     width: 12px;
     height: 0;
     left: -12px;
@@ -340,9 +352,20 @@ h3 {
 }
 @media only screen and (max-width: 1360px){
     .abc{
-        font-size: 8px;
+        font-size: 0.6rem;
+        /* content-visibility: visible; */
+        max-width: 100%; /* Allow the tree to take up the full screen width */
+
+
 
     }
+}
+.rmv1, .rmv1:hover {
+    text-decoration: none;
+    color: rgb(54, 66, 117);
+}
+.rmv1:hover{
+    color: #040931;
 }
 
 /*# sourceMappingURL=stylee.min.css.map */
