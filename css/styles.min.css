@@ -852,6 +852,16 @@
 
     }
 }
+/* Responsive styles for mobile screens */
+@media only screen and (max-width: 933px) {
+    .abc {
+        font-size: 0.6rem;
+        overflow-x: auto; /* Add horizontal scrollbar for tree on mobile */
+        max-width: 100%; /* Ensure the tree can take up the full screen width */
+    }
+    
+    /* Modify other styles as needed for mobile devices */
+}
 
 @media only screen and (min-width: 425px) and (max-width: 576px){
     .main-slider h2{
