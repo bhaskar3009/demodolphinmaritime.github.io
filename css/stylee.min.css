@@ -366,10 +366,24 @@ h3 {
     .abc {
         font-size: 0.6rem;
         overflow-x: auto; /* Add horizontal scrollbar for tree on mobile */
-        max-width: 100%; /* Ensure the tree can take up the full screen width */
+        width: 100%; /* Ensure the container takes up the full width */
     }
     
     /* Modify other styles as needed for mobile devices */
+}
+
+@media only screen and (max-width: 933px) {
+    .abc {
+        font-size: 0.6rem;
+        overflow-x: auto; /* Add horizontal scrollbar for tree on mobile */
+        min-width: 100%; /* Ensure the tree can take up the full screen width */
+    }
+    
+    /* Modify other styles as needed for mobile devices */
+}
+/* Example for tree elements */
+.tree.vertical li div {
+    margin: 12px calc(1%); /* Responsive margin based on percentage */
 }
 .rmv1, .rmv1:hover {
     text-decoration: none;
