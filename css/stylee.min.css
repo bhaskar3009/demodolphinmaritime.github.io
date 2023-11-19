@@ -12,6 +12,9 @@ h3 {
 .abc{
     display: flex;
     justify-content: center;
+    /* overflow-x: auto;     */
+    width: 100%;
+
     font-size: 1rem;
     font-weight: bolder;
 
@@ -19,8 +22,8 @@ h3 {
 .tree {
     margin: auto;
     padding: 0;
-    /* max-width: 100%; */
-    /* overflow: auto; */
+    max-width: 100%;
+    overflow: auto;
 
 }
 
@@ -66,13 +69,13 @@ h3 {
     height: 100%;
     width: 0;
     top: 0;
-    left: -12px
+    /* left: -12px */
 }
 
 .tree.cascade li:after {
     border-top: 3px solid #4e4b4b;
     width: 12px;
-    left: -12px;
+    /* left: -12px; */
     top: 24px
 }
 
@@ -295,7 +298,7 @@ h3 {
 .tree.vertical.cascade-3>li>ul>li>ul>li div,
 .tree.vertical.cascade-2>li>ul>li div,
 .tree.vertical .cascade div {
-    background-color: gray;
+    background-color: rgb(226, 221, 221);
     border-radius: 5px;
     border: 2px solid rgb(13, 131, 62);
     margin: 0;
