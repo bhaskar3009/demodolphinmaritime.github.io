@@ -39,7 +39,7 @@ class MyHeader extends HTMLElement {
                                     <li class="eff"><a href="overseasnetwork.html">Overseas Network</a></li>
                                 </ul>
                             </li>
-                            <li><a href="achievements.html">AChievements</a></li>
+                            <li><a href="achievements.html">Achievements</a></li>
                             <li><a href="contacts.html">Contact Us</a></li>
                             <li><a href="request.html">Get A Quote</a></li>
 
