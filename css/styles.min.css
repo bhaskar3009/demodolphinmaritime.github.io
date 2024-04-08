@@ -930,8 +930,8 @@
   @media only screen and (min-width: 577px) {
     /* Small desktop / ipad view: 3 tiles */
     .box {
-      width: 33.3%;
-      padding-bottom: 33.3%;
+      width: 25%;
+      padding-bottom: 25%;
     }
   }
 
@@ -967,6 +967,60 @@
 @media (max-width: 480px) {
     .achievement-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+.photo-wrapper {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.photo {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+
+    & img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -1rem;
+        bottom: -1rem;
+        left: -16rem;
+        background: linear-gradient(90deg, transparent, white, transparent);
+        width: 16rem;
+        opacity: 0;
+        transform: rotate(6deg);
+    }
+
+    &:hover::after {
+        left: 100%;
+        opacity: 0.15;
+        transition: inset 1s;
+    }
+
+    &:hover {
+        transform: scale(1.1) !important;
+    }
+
+    &.even {
+        transform: rotate(2deg);
+    }
+
+    &:not(.even) {
+        transform: rotate(-2deg);
     }
 }
 
@@ -11692,7 +11746,7 @@ f .img--bg {
 }
 
 .bg--dgray {
-    background: #31373f
+    background: #494a4b
 }
 
 .bg--lgray {
@@ -12396,7 +12450,7 @@ Section Title
 }
 
 .layout--white {
-    -webkit-text-stroke-color: rgba(255, 255, 255, .25)
+    -webkit-text-stroke-color: rgb(252, 252, 252)
 }
 
 .table {
@@ -14786,7 +14840,7 @@ form.tracking-form {
     width: 100%;
     max-width: 290px;
     position: absolute;
-    bottom: 50px;
+    bottom: 10px;
     left: 15px
 }
 
@@ -16841,17 +16895,18 @@ p {
 .counter {
     display: inline-block;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     min-width: 230px
 }
 
 .counter__top {
     font-weight: 700;
-    line-height: 1.1
+    line-height: 1.1;
+    text-align: center;
 }
 
 .counter__lower {
-    text-align: left
+    text-align: center
 }
 
 .counter__count {
@@ -16883,16 +16938,15 @@ p {
 
 .counter--filled {
     color: #fff;
-    background: #003d90;
-    padding: 47px 30px 58px 30px;
+    background-image: linear-gradient(140deg,#7da887 10%, #1c241e 40%,  #747875  70%);    padding: 47px 30px 58px 30px;
     -webkit-clip-path: polygon(90% 0, 100% 12%, 100% 100%, 0 100%, 0 0);
-    clip-path: polygon(90% 0, 100% 12%, 100% 100%, 0 100%, 0 0);
+    clip-path: ellipse(50% 50% at center);
     width: 100%
 }
 
 @media only screen and (min-width:1200px) {
     .counter--filled {
-        padding: 47px 50px 58px 50px
+        padding: 47px 50px 58px 50px;
     }
 }
 
@@ -19745,7 +19799,7 @@ p {
 .contact-trigger {
     position: relative;
     color: #fff;
-    background: #003d90;
+    background: #2bb9e0;
     padding: 28px 30px 40px 30px;
     width: 100%;
     max-width: 370px;
@@ -20408,7 +20462,7 @@ section.front-about {
 
 @media only screen and (min-width:1200px) {
     .front-about__bg {
-        height: calc(100% - 70px)
+        /* height: calc(100% - 70px) */
     }
 }
 

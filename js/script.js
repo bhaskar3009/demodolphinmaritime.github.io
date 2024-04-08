@@ -146,6 +146,38 @@ achievements.forEach((achievement) => {
 		});
 	}
 
+	const photos = Array.from(document.getElementsByClassName("photo"));
+const photoWrapper = document.getElementById("photoWrapper");
+
+let count = 0;
+photos.forEach((photo) => {
+    count++;
+    if (count % 2) {
+        // photo.classList.add("even");
+    }
+});
+
+photoWrapper.addEventListener("scroll", () => {
+    photos.forEach(checkPosition);
+});
+
+function checkPosition(photo) {
+    if (photo.getBoundingClientRect().right - 4 <= 0) {
+        const clone = photo.cloneNode(true); // Clone the photo
+        photoWrapper.append(clone); // Append the cloned photo
+        return;
+    }
+}
+
+function infiniteScroll() {
+    photoWrapper.scrollLeft++;
+    requestAnimationFrame(infiniteScroll);
+}
+
+infiniteScroll();
+
+
+	
 	//Services-carousel
 	if ($('.services-carousel').length) {
 		$('.services-carousel').owlCarousel({

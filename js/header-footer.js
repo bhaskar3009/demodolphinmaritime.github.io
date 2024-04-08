@@ -27,17 +27,17 @@ class MyHeader extends HTMLElement {
                                     <ul>
                                     <li class="eff"><a href="bod.html">Board of Directors</a></li>
                                     <li class="eff"><a href="kmp.html">List of KMP</a></li>
-                                    <li class="eff"><a href="officelocations.html">Office Locations</a></li>
+                                   <!-- <li class="eff"><a href="officelocations.html">Office Locations</a></li>  -->
                                     </ul>
                                 </li>
                             </ul>
                             </li>
                             <li><a href="services.html">Services</a>
                             </li>
-                            <li class="dropdown"><a href="network.html">Network</a>
-                                <ul>
+                            <li><a href="network.html">Network</a>
+                               <!-- <ul>
                                     <li class="eff"><a href="overseasnetwork.html">Overseas Network</a></li>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li><a href="achievements.html">Achievements</a></li>
                             <li><a href="contacts.html">Contact Us</a></li>
@@ -130,7 +130,7 @@ class MyFooter extends HTMLElement {
                     <ul class="page-footer__menu list--reset">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="">Office Locations</a></li>
+                      <!--  <li><a href="">Office Locations</a></li> -->
 
                         <li><a href="services.html">Services</a></li>
                         <li><a href="network.html">Network</a></li>
