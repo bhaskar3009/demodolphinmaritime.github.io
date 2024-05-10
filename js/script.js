@@ -146,35 +146,49 @@ achievements.forEach((achievement) => {
 		});
 	}
 
-	const photos = Array.from(document.getElementsByClassName("photo"));
+
+
+
+
+
+
+
+
+
+
+const photos = Array.from(document.getElementsByClassName("photo"));
 const photoWrapper = document.getElementById("photoWrapper");
+const wrapperWidth = photoWrapper.offsetWidth;
 
-let count = 0;
-photos.forEach((photo) => {
-    count++;
-    if (count % 2) {
-        // photo.classList.add("even");
-    }
+let totalWidth = 0;
+
+// Calculate the total width of all photos
+photos.forEach(photo => {
+    totalWidth += photo.offsetWidth;
 });
 
-photoWrapper.addEventListener("scroll", () => {
-    photos.forEach(checkPosition);
-});
-
-function checkPosition(photo) {
-    if (photo.getBoundingClientRect().right - 4 <= 0) {
-        const clone = photo.cloneNode(true); // Clone the photo
-        photoWrapper.append(clone); // Append the cloned photo
-        return;
-    }
+// Clone photos if needed to fill the container
+while (totalWidth < wrapperWidth * 2) {
+    photos.forEach(photo => {
+        const clone = photo.cloneNode(true);
+        photoWrapper.append(clone);
+        totalWidth += photo.offsetWidth;
+    });
 }
 
 function infiniteScroll() {
+    if (photoWrapper.scrollLeft >= totalWidth / 2) {
+        photoWrapper.scrollLeft -= totalWidth / 2;
+    } else if (photoWrapper.scrollLeft === 0) {
+        photoWrapper.scrollLeft = totalWidth / 2;
+    }
+
     photoWrapper.scrollLeft++;
     requestAnimationFrame(infiniteScroll);
 }
 
 infiniteScroll();
+
 
 
 	
