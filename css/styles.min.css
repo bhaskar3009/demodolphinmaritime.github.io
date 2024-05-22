@@ -16895,18 +16895,17 @@ p {
 .counter {
     display: inline-block;
     font-weight: 700;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     min-width: 230px
 }
 
 .counter__top {
     font-weight: 700;
     line-height: 1.1;
-    text-align: center;
 }
 
 .counter__lower {
-    text-align: center
+    text-align: left
 }
 
 .counter__count {
@@ -16938,20 +16937,22 @@ p {
 
 .counter--filled {
     color: #fff;
-    background-image: linear-gradient(140deg,#7da887 10%, #1c241e 40%,  #747875  70%);    padding: 47px 30px 58px 30px;
+    background: #003d90;
+    padding: 47px 30px 58px 30px;
     -webkit-clip-path: polygon(90% 0, 100% 12%, 100% 100%, 0 100%, 0 0);
-    clip-path: ellipse(50% 50% at center);
+    clip-path: polygon(90% 0, 100% 12%, 100% 100%, 0 100%, 0 0);
     width: 100%
 }
 
 @media only screen and (min-width:1200px) {
     .counter--filled {
-        padding: 47px 50px 58px 50px;
+        padding: 47px 50px 58px 50px
     }
 }
 
 .counter--filled .counter__details {
-    color: #427ccb
+    color: #427ccb;
+    font-size: larger;
 }
 
 .counter--white .counter__top {
@@ -19748,7 +19749,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    height: calc(100% - 130px);
+    /* height: calc(100% - 130px); */
     width: 100%
 }
 
@@ -19799,10 +19800,10 @@ p {
 .contact-trigger {
     position: relative;
     color: #fff;
-    background: #2bb9e0;
+    background: #447edb;
     padding: 28px 30px 40px 30px;
-    width: 100%;
     max-width: 370px;
+    width: 100%;
     -webkit-clip-path: polygon(90% 0, 100% 18%, 100% 100%, 0 100%, 0 0);
     clip-path: polygon(90% 0, 100% 18%, 100% 100%, 0 100%, 0 0)
 }
@@ -20462,7 +20463,7 @@ section.front-about {
 
 @media only screen and (min-width:1200px) {
     .front-about__bg {
-        /* height: calc(100% - 70px) */
+        height: calc(100% - 70px)
     }
 }
 
@@ -20482,7 +20483,8 @@ section.front-about {
 
 .front-about .counter {
     margin-top: auto;
-    position: relative
+    position: relative;
+    /* margin-bottom: 0; */
 }
 
 .front-about__video {
