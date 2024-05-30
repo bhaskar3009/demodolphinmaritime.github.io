@@ -150,6 +150,7 @@ class MyFooter extends HTMLElement {
                         </p>
                         <br>
                         <p><strong> <b>Phone:</b> </strong> <a href="tel:+912266310673">+91 2266310673</a></p>
+                        <p><strong><b>Fax:</b></strong> <a href="fax:+912266310674">022 6631 0674</a></p>
                         <p><strong>  <b>Email:</b> </strong> <a href="mailto:info@dolphinmaritime.in
                             ">info@dolphinmaritime.in
                             </a></p>
