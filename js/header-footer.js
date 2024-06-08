@@ -188,12 +188,12 @@ class MyFooter extends HTMLElement {
                 </div>
             </div>
             <div class="row top-50 last">
-                <div class="col-lg-6 text-sm-center text-lg-left">
-                    <div class="page-footer__privacy"><a href="">Terms and conditions</a><a href="">Privacy
-                            policy</a><a href="">Cookies</a></div>
-                </div>
-                <div class="col-lg-6 text-sm-center text-lg-right">
+                <div class="col-lg-6 text-sm-center text-lg-center">
                     <div class="page-footer__copyright">&copy; Copyright 2023 by  <a class="CW" href="index.html">Dolphin Maritime Pvt Ltd.</a> All rights Reserved.</div>
+
+                </div>
+                <div class="col-lg-6 text-sm-center text-lg-center">
+                <div class="page-footer__copyright">Built by  <a class="CW" href="https://networkinfotech.in/">Network Infotech Pvt Ltd</a></div>
                 </div>
             </div>
         </div>
